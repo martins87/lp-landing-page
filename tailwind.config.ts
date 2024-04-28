@@ -9,7 +9,16 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        'green': '#5A4F4F',
+        "green": "#5A4F4F",
+        "light-green-bg": "#99C35F",
+        "dark-green-bg": "#4CA69D"
+      },
+      fontFamily: {
+        ubuntu: ["var(--font-ubuntu)"],
+        sans: ["var(--font-opensans)"],
+      },
+      dropShadow: {
+        "3xl": "0 4.8px 4.8px rgba(0, 0, 0, 0.25)",
       }
     },
   },

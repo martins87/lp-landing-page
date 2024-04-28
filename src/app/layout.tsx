@@ -1,12 +1,20 @@
 import type { Metadata } from "next";
-import { Ubuntu } from "next/font/google";
-import "./globals.css";
+import { Open_Sans, Ubuntu } from "next/font/google";
 
 import Navbar from "./components/Navbar";
+
+import "./globals.css";
+
+const openSans = Open_Sans({
+  subsets: ["latin"],
+  weight: ["500"],
+  variable: "--font-opensans",
+});
 
 const ubuntu = Ubuntu({
   subsets: ["latin"],
   weight: ["500", "700"],
+  variable: "--font-ubuntu",
 });
 
 export const metadata: Metadata = {
@@ -23,7 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={ubuntu.className}>
+      <body className={`${ubuntu.variable} ${openSans.variable} font-ubuntu`}>
         <Navbar />
         {children}
       </body>
