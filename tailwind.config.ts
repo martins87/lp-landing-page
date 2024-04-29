@@ -10,8 +10,10 @@ const config: Config = {
     extend: {
       colors: {
         "green": "#5A4F4F",
-        "light-green-bg": "#99C35F",
-        "dark-green-bg": "#4CA69D"
+        "light-green": "#99C35F",
+        "dark-green": "#4CA69D",
+        'btn-text': '#4CA69D',
+        'btn-green': '#7BB882',
       },
       fontFamily: {
         ubuntu: ["var(--font-ubuntu)"],
