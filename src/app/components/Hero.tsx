@@ -1,7 +1,7 @@
 import Image from "next/image";
 
-import ModernDownloadApp from "../assets/Modern-Download-App-Instagram-Post.svg";
 import Button from "./Button";
+import ModernDownloadApp from "../assets/Modern-Download-App-Instagram-Post.svg";
 
 const Hero = () => {
   return (

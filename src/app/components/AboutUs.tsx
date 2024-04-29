@@ -33,8 +33,8 @@ const icons = [
 
 const AboutUs = () => {
   return (
-    <div className="w-full h-[806px] bg-white" id="about-us">
-      <div className="flex flex-col my-32 mx-80">
+    <div className="w-full h-auto flex justify-center bg-white" id="about-us">
+      <div className="flex flex-col my-48  w-[60%]">
         <h2 className="capitalize text-[52px] text-dark-green text-center leading-[60px]">
           connecting you to your family since 2016
         </h2>
