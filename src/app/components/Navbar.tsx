@@ -11,17 +11,19 @@ const navLinks = [
 
 const Navbar = () => {
   return (
-    <nav className="w-full h-28 pl-10 flex items-center justify-between bg-white border-b">
-      <Image src={logo} alt="Liberty Pay logo" />
-      <ul className="flex items-center justify-between gap-8 pr-10">
-        {navLinks.map((link) => (
-          <li key={link.id} className="text-green text-2xl">
-            <a className="no-underline" href={link.id}>
-              {link.section}
-            </a>
-          </li>
-        ))}
-      </ul>
+    <nav className="flex justify-center sticky top-0 left-0 z-[10] w-full h-20 pl-10 bg-white border-b">
+      <div className="flex items-center justify-between w-[80%]">
+        <Image src={logo} alt="Liberty Pay logo" />
+        <ul className="flex items-center justify-between gap-8 pr-10">
+          {navLinks.map((link) => (
+            <li key={link.id} className="text-green text-2xl">
+              <a className="no-underline" href={link.id}>
+                {link.section}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
     </nav>
   );
 };
