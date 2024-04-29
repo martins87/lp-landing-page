@@ -18,7 +18,7 @@ const config: Config = {
         "card-gray": "#F2F2F2",
       },
       fontFamily: {
-        ubuntu: ["var(--font-ubuntu)"],
+        nunito: ["var(--font-nunito-sans)"],
         sans: ["var(--font-opensans)"],
       },
       dropShadow: {

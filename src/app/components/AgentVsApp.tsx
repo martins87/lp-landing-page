@@ -17,8 +17,8 @@ const AgentVsApp = () => {
             Ideally located on your trusted convenience store, all the benefits
             of sending with LibertyPay at your everyday store!
           </h5>
-          <Button href="#" white capitalize>
-            add LibertyPay to my store
+          <Button href="#" white>
+            Add LibertyPay to my store
           </Button>
         </div>
       </div>
@@ -27,14 +27,14 @@ const AgentVsApp = () => {
         src={MobileApp}
         alt="Mobile app"
       />
-      <div className="absolute left-[20%] mt-[35%]">
+      <div className="absolute bottom-28 left-[20%] mt-[35%]">
         <div className="flex flex-col items-center justify-center w-[589px] text-center">
           <h2 className="text-white text-[52px] leading-[60px]">Mobile app</h2>
           <h5 className="text-white font-sans font-normal text-[27px] mt-8">
             Send money home from the convenience of your own phone. Download the
             LibertyPay App and start saving!
           </h5>
-          <Button href="#" white capitalize>
+          <Button href="#" white>
             Download the LibertyPay App
           </Button>
         </div>

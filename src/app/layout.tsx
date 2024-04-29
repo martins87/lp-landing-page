@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Open_Sans, Ubuntu } from "next/font/google";
+import { Open_Sans, Nunito_Sans } from "next/font/google";
 
 import Navbar from "./components/Navbar";
 
@@ -11,10 +11,10 @@ const openSans = Open_Sans({
   variable: "--font-opensans",
 });
 
-const ubuntu = Ubuntu({
+const nunitoSans = Nunito_Sans({
   subsets: ["latin"],
-  weight: ["500", "700"],
-  variable: "--font-ubuntu",
+  weight: ["400", "500"],
+  variable: "--font-nunito-sans",
 });
 
 export const metadata: Metadata = {
@@ -31,7 +31,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${ubuntu.variable} ${openSans.variable} font-ubuntu`}>
+      <body
+        className={`${nunitoSans.variable} ${openSans.variable} font-nunito`}
+      >
         <Navbar />
         {children}
       </body>

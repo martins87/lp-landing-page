@@ -35,8 +35,8 @@ const AboutUs = () => {
   return (
     <div className="w-full h-auto flex justify-center bg-white" id="about-us">
       <div className="flex flex-col my-48  w-[60%]">
-        <h2 className="capitalize text-[52px] text-dark-green text-center leading-[60px]">
-          connecting you to your family since 2016
+        <h2 className="text-[52px] text-dark-green text-center leading-[60px]">
+          Connecting you to your family since 2016
         </h2>
         <h5 className="mt-2 font-sans font-normal text-[27px] text-center">
           The fastest and cheapest way to send money to friends or loved ones.
