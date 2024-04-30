@@ -60,7 +60,7 @@ const reviews = [
   },
 ];
 
-const SocialProof = () => {
+const SocialProof: FC = () => {
   return (
     <div
       className="w-full h-[1100px] flex justify-center bg-white"

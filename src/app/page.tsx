@@ -3,6 +3,7 @@ import AboutUs from "./components/AboutUs";
 import AgentVsApp from "./components/AgentVsApp";
 import SocialProof from "./components/SocialProof";
 import Where from "./components/Where";
+import Steps from "./components/Steps";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <AgentVsApp />
       <SocialProof />
       <Where />
+      <Steps />
     </div>
   );
 }
