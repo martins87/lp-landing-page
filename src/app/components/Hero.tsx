@@ -1,9 +1,10 @@
+import { FC } from "react";
 import Image from "next/image";
 
 import Button from "./Button";
 import ModernDownloadApp from "../assets/Modern-Download-App-Instagram-Post.svg";
 
-const Hero = () => {
+const Hero: FC = () => {
   return (
     <div className="relative w-full h-[998px] bg-gradient-to-t from-dark-green to-light-green">
       <div className="absolute flex flex-col w-[592px] h-96 mt-48 ml-44">

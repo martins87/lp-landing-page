@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { FC, ReactNode } from "react";
 import { twMerge } from "tailwind-merge";
 
 type ButtonProps = {
@@ -8,7 +8,7 @@ type ButtonProps = {
   children: ReactNode;
 };
 
-const Button = ({ href, white, capitalize, children }: ButtonProps) => {
+const Button: FC<ButtonProps> = ({ href, white, capitalize, children }) => {
   return (
     <a
       href={href}

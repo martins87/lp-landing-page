@@ -1,3 +1,4 @@
+import { FC } from "react";
 import Image from "next/image";
 
 import logo from "../assets/LibertyIcon.svg";
@@ -9,7 +10,7 @@ const navLinks = [
   { id: "#contact-us", section: "Contact Us" },
 ];
 
-const Navbar = () => {
+const Navbar: FC = () => {
   return (
     <nav className="flex justify-center sticky top-0 left-0 z-[10] w-full h-20 pl-10 bg-white border-b">
       <div className="flex items-center justify-between w-[80%]">

@@ -1,10 +1,14 @@
+import { FC } from "react";
 import Image from "next/image";
 
 import ExchangeBox from "../assets/Exchange-box.png";
 
-const Where = () => {
+const Where: FC = () => {
   return (
-    <div className="w-full h-[1100px] flex items-center justify-center bg-gradient-to-t from-dark-green to-light-green">
+    <div
+      className="w-full h-[1100px] flex items-center justify-center bg-gradient-to-t from-dark-green to-light-green"
+      id="countries"
+    >
       <div className="flex flex-col w-[594px] items-center gap-y-12 text-center text-white">
         <h2 className="text-7xl">
           Send from the

@@ -1,3 +1,4 @@
+import { FC } from "react";
 import Image from "next/image";
 import { twMerge } from "tailwind-merge";
 
@@ -14,7 +15,7 @@ type RoundedIconProps = {
   style?: string;
 };
 
-const RoundedIcon = ({ icon, label, style }: RoundedIconProps) => {
+const RoundedIcon: FC<RoundedIconProps> = ({ icon, label, style }) => {
   return (
     <div className="flex flex-col gap-y-4">
       <div className="flex items-center justify-center w-[150px] h-[150px] bg-gradient-to-t  from-dark-green to-light-green rounded-full border">
@@ -31,7 +32,7 @@ const icons = [
   { icon: ClipIcon, label: "Safe", style: "mt-2" },
 ];
 
-const AboutUs = () => {
+const AboutUs: FC = () => {
   return (
     <div className="w-full h-auto flex justify-center bg-white" id="about-us">
       <div className="flex flex-col my-48  w-[60%]">

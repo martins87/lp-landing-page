@@ -1,10 +1,11 @@
+import { FC } from "react";
 import Image from "next/image";
 
 import Button from "./Button";
 import AgentModel from "../assets/Agent-model.png";
 import MobileApp from "../assets/Mobile-App.svg";
 
-const AgentVsApp = () => {
+const AgentVsApp: FC = () => {
   return (
     <div className="relative w-full h-[1100px] flex justify-center bg-gradient-to-t from-light-green to-dark-green">
       <div className="absolute flex justify-between w-[70%] mt-40">

@@ -1,3 +1,4 @@
+import { FC } from "react";
 import Image from "next/image";
 
 import Customer1 from "../assets/Customer-1.png";
@@ -11,12 +12,12 @@ type ReviewBoxProps = {
   customerImage: any;
 };
 
-const ReviewBox = ({
+const ReviewBox: FC<ReviewBoxProps> = ({
   title,
   review,
   customerName,
   customerImage,
-}: ReviewBoxProps) => {
+}) => {
   return (
     <div className="relative w-96 h-96 flex bg-card-gray rounded-[30px] drop-shadow-3xl">
       <div className="flex flex-col p-8">
