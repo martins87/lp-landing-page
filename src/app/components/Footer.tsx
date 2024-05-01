@@ -4,18 +4,6 @@ import Link from "next/link";
 
 import logo from "../assets/LibertyIcon.svg";
 
-const links = [
-  { label: "Contact us", url: "https://libertypay.activehosted.com/f/1" },
-  { label: "Careers", url: "https://libertypay.com/careers.html" },
-  { label: "Privacy Policy", url: "https://libertypay.com/privacy.html" },
-  { label: "Terms of Service", url: "https://libertypay.com/terms.html" },
-  { label: "Licensed States", url: "https://libertypay.com/licenses.html" },
-  {
-    label: "Prevention on frauds",
-    url: "https://libertypay.com/fraud.html",
-  },
-];
-
 type SocialIconProps = {
   width: string;
   height: string;
@@ -71,14 +59,30 @@ const YouTubeIcon: FC<SocialIconProps> = ({ width, height }) => {
   );
 };
 
+const links = [
+  { label: "Contact us", url: "https://libertypay.activehosted.com/f/1" },
+  { label: "Careers", url: "https://libertypay.com/careers.html" },
+  { label: "Privacy Policy", url: "https://libertypay.com/privacy.html" },
+  { label: "Terms of Service", url: "https://libertypay.com/terms.html" },
+  { label: "Licensed States", url: "https://libertypay.com/licenses.html" },
+  {
+    label: "Prevention on frauds",
+    url: "https://libertypay.com/fraud.html",
+  },
+];
+
 const Footer: FC = () => {
   return (
-    <div className="w-full h-[500px] bg-really-light-green/50 flex items-center justify-center ">
-      <div className="w-[70%] flex justify-center gap-x-32">
-        <div className="-mt-5">
-          <Image src={logo} alt="Liberty Pay logo" />
+    <div className="flex items-center justify-center w-full h-[500px] bg-really-light-green/50">
+      <div className="flex justify-between w-[75%] gap-x-32">
+        <div className="-mt-5 min-w-48">
+          <Image
+            className="min-w-[243px] min-h-[63px]"
+            src={logo}
+            alt="Liberty Pay logo"
+          />
         </div>
-        <div>
+        <div className="min-w-48">
           <h3 className="text-2xl uppercase text-green font-bold mb-8">
             company
           </h3>
@@ -92,7 +96,7 @@ const Footer: FC = () => {
             ))}
           </ul>
         </div>
-        <div>
+        <div className="min-w-48">
           <h3 className="text-2xl uppercase text-green font-bold mb-8">
             follow us
           </h3>
@@ -122,6 +126,14 @@ const Footer: FC = () => {
               <YouTubeIcon width="40" height="40" />
             </Link>
           </div>
+        </div>
+        <div className="min-w-48">
+          <h3 className="text-xl text-green mb-2">
+            TIAGN I, Inc. NMLS # 1505655
+          </h3>
+          <h3 className="text-xl text-green ">
+            TIAGN I Brasil Serviços De Tecnologia LTDA
+          </h3>
         </div>
       </div>
     </div>

@@ -67,8 +67,8 @@ const SocialProof: FC = () => {
       id="social-proof"
     >
       <div className="flex flex-col gap-y-28 my-48 w-[60%] items-center">
-        <div className="flex flex-col gap-y-4">
-          <div className="text-[64px] capitalize leading-[74px] text-green-bg">
+        <div className="flex flex-col gap-y-4 text-center">
+          <div className="text-[64px] capitalize leading-[74px] text-dark-green">
             customer reviews
           </div>
           <div className="font-sans font-normal text-black text-[27px] leading-[37px]">

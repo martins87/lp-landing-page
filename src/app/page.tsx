@@ -2,7 +2,7 @@ import Hero from "./components/Hero";
 import AboutUs from "./components/AboutUs";
 import AgentVsApp from "./components/AgentVsApp";
 import SocialProof from "./components/SocialProof";
-import Where from "./components/Where";
+import Countries from "./components/Countries";
 import Steps from "./components/Steps";
 import Footer from "./components/Footer";
 
@@ -13,7 +13,7 @@ export default function Home() {
       <AboutUs />
       <AgentVsApp />
       <SocialProof />
-      <Where />
+      <Countries />
       <Steps />
       <Footer />
     </div>

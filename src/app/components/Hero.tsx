@@ -6,21 +6,19 @@ import ModernDownloadApp from "../assets/Modern-Download-App-Instagram-Post.svg"
 
 const Hero: FC = () => {
   return (
-    <div className="relative w-full h-[998px] bg-gradient-to-t from-dark-green to-light-green">
+    <div className="relative w-full h-[998px] bg-really-light-green">
       <div className="absolute flex flex-col w-[592px] h-96 mt-48 ml-44">
-        <h1 className="text-7xl text-white drop-shadow-3xl leading-[86.4px] text-center">
+        <h1 className="text-7xl text-green font-bold drop-shadow-3xl leading-[86.4px] text-center">
           Save when
           <br />
           you send with Liberty Pay
         </h1>
-        <h5 className="mt-6 text-white text-center text-[27px] leading-9 tracking-wider">
+        <h5 className="mt-6 text-green text-center text-[27px] leading-9">
           Join us today and start sending with
           <br />
           the best rate in the market
         </h5>
-        <Button href="https://qrfy.com/p/vHeSi1I1Bv" white>
-          Download the app
-        </Button>
+        <Button href="https://qrfy.com/p/vHeSi1I1Bv">Download the app</Button>
       </div>
       <Image
         className="absolute right-0 w-[897.4px] h-[1039.5px]"

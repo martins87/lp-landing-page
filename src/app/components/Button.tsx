@@ -18,7 +18,7 @@ const Button: FC<ButtonProps> = ({ href, white, capitalize, children }) => {
         capitalize ? "capitalize" : "",
         white
           ? "bg-white text-btn-text hover:bg-btn-green hover:bg-opacity-10 hover:text-white"
-          : "bg-btn-green text-white hover:bg-white hover:bg-opacity-10 hover:text-btn-text"
+          : "bg-btn-green text-white hover:bg-green"
       )}
     >
       {children}

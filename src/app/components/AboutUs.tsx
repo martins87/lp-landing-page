@@ -21,7 +21,7 @@ const RoundedIcon: FC<RoundedIconProps> = ({ icon, label, style }) => {
       <div className="flex items-center justify-center w-[150px] h-[150px] bg-gradient-to-t  from-dark-green to-light-green rounded-full border">
         <Image className={twMerge(style)} src={icon} alt="Fast icon" />
       </div>
-      <h5 className="text-4xl text-dark-green text-center">{label}</h5>
+      <h5 className="text-4xl text-green text-center">{label}</h5>
     </div>
   );
 };
@@ -55,24 +55,24 @@ const AboutUs: FC = () => {
         <div className="flex items-center justify-evenly mt-20">
           <Button href="#">
             <div className="flex items-center gap-4">
-              <Image width={60} height={60} src={AppleLogo} alt="Apple logo" />
+              <Image width={50} height={50} src={AppleLogo} alt="Apple logo" />
               <div className="flex flex-col">
                 <span className="text-xl">{"Available on the"}</span>
-                <span>{"Apple Store"}</span>
+                <span className="-mt-1">{"Apple Store"}</span>
               </div>
             </div>
           </Button>
           <Button href="#">
             <div className="flex items-center gap-4">
               <Image
-                width={60}
-                height={60}
+                width={50}
+                height={50}
                 src={GooglePlayLogo}
                 alt="Apple logo"
               />
               <div className="flex flex-col">
                 <span className="text-xl">{"Available on"}</span>
-                <span>{"Google Play"}</span>
+                <span className="-mt-1">{"Google Play"}</span>
               </div>
             </div>
           </Button>
