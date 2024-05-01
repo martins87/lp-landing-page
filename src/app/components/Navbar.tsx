@@ -1,6 +1,9 @@
-import { FC } from "react";
+"use client";
+
+import { FC, useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { twMerge } from "tailwind-merge";
 
 import logo from "../assets/LibertyIcon.svg";
 
@@ -12,8 +15,34 @@ const navLinks = [
 ];
 
 const Navbar: FC = () => {
+  const [isScrolling, setIsScrolling] = useState<boolean>(false);
+
+  const handleScroll = () => {
+    const scrollTop = window.scrollY;
+
+    if (scrollTop > 0) {
+      setIsScrolling(true);
+      console.log("scrollTop", scrollTop);
+    } else {
+      setIsScrolling(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="flex justify-center sticky top-0 left-0 z-[10] w-full h-20 bg-white border-b">
+    <nav
+      className={twMerge(
+        "flex justify-center sticky top-0 left-0 z-[10] w-full h-20 bg-white",
+        isScrolling ? "border-b border-green/10" : ""
+      )}
+    >
       <div className="flex items justify-between w-[75%]">
         <Link className="flex items-center" href="/">
           <Image src={logo} alt="Liberty Pay logo" />
