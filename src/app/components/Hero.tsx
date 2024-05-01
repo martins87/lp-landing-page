@@ -2,18 +2,16 @@ import { FC } from "react";
 import Image from "next/image";
 
 import Button from "./Button";
-import ModernDownloadApp from "../assets/Modern-Download-App-Instagram-Post.svg";
+import AppScreenshots from "../assets/hero.png";
 
 const Hero: FC = () => {
   return (
-    <div className="relative w-full h-[998px] bg-really-light-green">
-      <div className="absolute flex flex-col w-[592px] h-96 mt-48 ml-44">
+    <div className="relative flex items-center w-full h-[998px] bg-white border-b overflow-hidden">
+      <div className="absolute flex flex-col ml-[12.5%] gap-y-10">
         <h1 className="text-7xl text-green font-bold drop-shadow-3xl leading-[86.4px] text-center">
-          Save when
-          <br />
-          you send with Liberty Pay
+          Save when you send
         </h1>
-        <h5 className="mt-6 text-green text-center text-[27px] leading-9">
+        <h5 className="mt-6 text-green text-center text-[27px] leading-10">
           Join us today and start sending with
           <br />
           the best rate in the market
@@ -21,9 +19,9 @@ const Hero: FC = () => {
         <Button href="https://qrfy.com/p/vHeSi1I1Bv">Download the app</Button>
       </div>
       <Image
-        className="absolute right-0 w-[897.4px] h-[1039.5px]"
-        src={ModernDownloadApp}
-        alt="Modern Download App"
+        className="absolute right-[20%] w-[420px] min-w-4 rotate-[30deg]"
+        src={AppScreenshots}
+        alt="App screenshots"
       />
     </div>
   );

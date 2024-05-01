@@ -22,7 +22,6 @@ const Navbar: FC = () => {
 
     if (scrollTop > 0) {
       setIsScrolling(true);
-      console.log("scrollTop", scrollTop);
     } else {
       setIsScrolling(false);
     }
