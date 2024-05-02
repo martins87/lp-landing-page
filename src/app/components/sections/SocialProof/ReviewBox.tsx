@@ -12,14 +12,12 @@ const ReviewBox: FC<ReviewBoxProps> = ({ review, customerName, date }) => {
   return (
     <div className="w-96 h-96 flex rounded-[30px] shadow-xl">
       <div className="relative flex flex-col p-8 gap-2">
-        <div className="flex flex-col mb-4">
-          <div className="flex">
-            <StarIcon />
-            <StarIcon />
-            <StarIcon />
-            <StarIcon />
-            <StarIcon />
-          </div>
+        <div className="flex mb-4">
+          <StarIcon />
+          <StarIcon />
+          <StarIcon />
+          <StarIcon />
+          <StarIcon />
         </div>
         <div className="max-w-80 font-sans font-normal text-[18px] leading-8 text-black">
           {review}
