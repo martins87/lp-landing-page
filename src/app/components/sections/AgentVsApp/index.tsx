@@ -1,9 +1,9 @@
 import { FC } from "react";
 import Image from "next/image";
 
-import Button from "./Button";
-import AgentModel from "../assets/Agent-model.png";
-import MobileApp from "../assets/Mobile-App.svg";
+import Button from "../../ui/Button";
+import AgentModel from "../../../assets/Agent-model.png";
+import MobileApp from "../../../assets/Mobile-App.svg";
 
 const AgentVsApp: FC = () => {
   return (
@@ -18,9 +18,7 @@ const AgentVsApp: FC = () => {
             Ideally located on your trusted convenience store, all the benefits
             of sending with LibertyPay at your everyday store!
           </h5>
-          <Button href="#" white>
-            Add LibertyPay to my store
-          </Button>
+          <Button href="#">Add LibertyPay to my store</Button>
         </div>
       </div>
       <Image
@@ -37,9 +35,7 @@ const AgentVsApp: FC = () => {
             Send money home from the convenience of your own phone. Download the
             LibertyPay App and start saving!
           </h5>
-          <Button href="#" white>
-            Download the LibertyPay App
-          </Button>
+          <Button href="#">Download the LibertyPay App</Button>
         </div>
       </div>
     </div>

@@ -1,10 +1,10 @@
-import Hero from "./components/Hero";
-import AboutUs from "./components/AboutUs";
-import AgentVsApp from "./components/AgentVsApp";
-import SocialProof from "./components/SocialProof";
-import Countries from "./components/Countries";
-import Steps from "./components/Steps";
-import Footer from "./components/Footer";
+import Hero from "./components/sections/Hero";
+import AboutUs from "./components/sections/AboutUs";
+import AgentVsApp from "./components/sections/AgentVsApp";
+import SocialProof from "./components/sections/SocialProof";
+import Countries from "./components/sections/SupportedCountries";
+import Steps from "./components/sections/Steps";
+import Footer from "./components/sections/Footer";
 
 export default function Home() {
   return (

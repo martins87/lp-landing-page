@@ -1,7 +1,7 @@
 import { FC } from "react";
 import Image from "next/image";
 
-import ExchangeBox from "../assets/Exchange-box.png";
+import ExchangeBox from "../../../assets/Exchange-box.png";
 
 const Where: FC = () => {
   return (

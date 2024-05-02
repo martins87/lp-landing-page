@@ -5,11 +5,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { twMerge } from "tailwind-merge";
 
-import logo from "../assets/LibertyIcon.svg";
+import logo from "../../assets/LibertyIcon.svg";
 
 const navLinks = [
   { id: "#about-us", section: "About us" },
-  { id: "#send-now", section: "Send Now!" },
+  { id: "#send-now", section: "Send Now" },
   { id: "#countries", section: "Countries" },
   { id: "#contact-us", section: "Contact Us" },
 ];
@@ -46,9 +46,9 @@ const Navbar: FC = () => {
         <Link className="flex items-center" href="/">
           <Image src={logo} alt="Liberty Pay logo" />
         </Link>
-        <ul className="flex items-center justify-between gap-8 pr-10">
+        <ul className="flex items-center justify-between gap-10 pr-10">
           {navLinks.map((link) => (
-            <li key={link.id} className="text-green text-2xl hover:font-bold">
+            <li key={link.id} className="text-green text-base hover:font-bold">
               <a className="no-underline" href={link.id}>
                 {link.section}
               </a>
