@@ -6,7 +6,7 @@ const reviews = [
   {
     review:
       "So happy to have this app! I've been suffering dealing with terrible money transfer services like Western Union for years. LibertyPay is so much better!",
-    customerName: "Simon$S",
+    customerName: "Simon S.",
     date: "10/11/2023",
   },
   {
@@ -18,7 +18,7 @@ const reviews = [
   {
     review:
       "Usei pela primeira vez o aplicativo durante uma viagem de férias para a Flórida. Em pleno feriado transferi dinheiro para o Brasil de forma segura, rápida e eficiente. Recomendo com certeza.",
-    customerName: "vaniahohenstein",
+    customerName: "Vania Hohenstein",
     date: "01/05/2024",
   },
 ];
