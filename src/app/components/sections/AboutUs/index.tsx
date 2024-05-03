@@ -1,64 +1,50 @@
 import { FC } from "react";
-import Image from "next/image";
 
-import Button from "../../ui/Button";
-import RoundedIcon from "./RoundedIcon";
-import FastIcon from "../../../assets/FastIcon.svg";
-import WalletIcon from "../../../assets/WalletIcon.svg";
-import ClipIcon from "../../../assets/ClipIcon.svg";
-import AppleLogo from "../../../assets/AppleLogoWhite.png";
-import GooglePlayLogo from "../../../assets/GooglePlayLogo.svg";
+import FeatureCard from "./FeatureCard";
+import StopWatch from "../../../assets/StopWatch.svg";
+import MoneyBag from "../../../assets/MoneyBag.svg";
+import Lock from "../../../assets/Lock.svg";
 
 const icons = [
-  { icon: FastIcon, label: "Fast", style: "-mt-6" },
-  { icon: WalletIcon, label: "Best rate", style: "-mt-3 ml-2" },
-  { icon: ClipIcon, label: "Safe", style: "mt-2" },
+  {
+    icon: StopWatch,
+    label: "Fast",
+    description: "Transactions complete fast with live updates.",
+  },
+  {
+    icon: MoneyBag,
+    label: "Best rate",
+    description: "Visit a location today and see how much you can save.",
+  },
+  {
+    icon: Lock,
+    label: "Safe",
+    description: "Regulated by State and Federal US Government Agencies.",
+  },
 ];
 
 const AboutUs: FC = () => {
   return (
-    <div className="w-full h-auto flex justify-center bg-white" id="about-us">
-      <div className="flex flex-col my-48  w-[60%]">
-        <h2 className="text-[52px] text-dark-green text-center leading-[60px]">
+    <div
+      className="w-full h-auto flex items-center justify-center bg-white"
+      id="about-us"
+    >
+      <div className="flex flex-col mx-[12.5%] my-48 w-full">
+        <h2 className="text-5xl text-green text-center font-bold tracking-wide">
           Connecting you to your family since 2016
         </h2>
-        <h5 className="mt-2 font-sans font-normal text-[27px] text-center">
+        <h5 className="font-sans font-normal text-green text-[24px] text-center mt-4">
           The fastest and cheapest way to send money to friends or loved ones.
         </h5>
-        <div className="flex justify-between mt-28">
+        <div className="flex justify-between mt-28 gap-8">
           {icons.map((i) => (
-            <RoundedIcon
+            <FeatureCard
               key={i.label}
               icon={i.icon}
               label={i.label}
-              style={i.style}
+              description={i.description}
             />
           ))}
-        </div>
-        <div className="flex items-center justify-evenly mt-20">
-          <Button href="#">
-            <div className="flex items-center gap-4">
-              <Image width={50} height={50} src={AppleLogo} alt="Apple logo" />
-              <div className="flex flex-col">
-                <span className="text-xl">{"Available on the"}</span>
-                <span className="-mt-1">{"Apple Store"}</span>
-              </div>
-            </div>
-          </Button>
-          <Button href="#">
-            <div className="flex items-center gap-4">
-              <Image
-                width={50}
-                height={50}
-                src={GooglePlayLogo}
-                alt="Apple logo"
-              />
-              <div className="flex flex-col">
-                <span className="text-xl">{"Available on"}</span>
-                <span className="-mt-1">{"Google Play"}</span>
-              </div>
-            </div>
-          </Button>
         </div>
       </div>
     </div>
