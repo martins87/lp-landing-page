@@ -48,7 +48,7 @@ const Navbar: FC = () => {
         </Link>
         <ul className="flex items-center justify-between gap-10 pr-10">
           {navLinks.map((link) => (
-            <li key={link.id} className="text-green text-base hover:font-bold">
+            <li key={link.id} className="text-green text-lg hover:font-bold">
               <a className="no-underline" href={link.id}>
                 {link.section}
               </a>
