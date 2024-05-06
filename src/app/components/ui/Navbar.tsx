@@ -48,8 +48,19 @@ const Navbar: FC = () => {
         </Link>
         <ul className="flex items-center justify-between gap-10 pr-10">
           {navLinks.map((link) => (
-            <li key={link.id} className="text-green text-lg hover:font-bold">
-              <a className="no-underline" href={link.id}>
+            <li key={link.id} className="text-green text-lg">
+              <a
+                className={
+                  link.id === "#contact-us"
+                    ? "bg-regular-green rounded-full px-6 py-3 text-white tracking-wide no-underline hover:bg-green-xl"
+                    : "hover:font-bold no-underline"
+                }
+                href={
+                  link.id === "#contact-us"
+                    ? "https://libertypay.activehosted.com/f/1"
+                    : link.id
+                }
+              >
                 {link.section}
               </a>
             </li>
