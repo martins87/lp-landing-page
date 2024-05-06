@@ -14,7 +14,7 @@ export default function Home() {
       <AboutUs />
       <AgentVsApp />
       <SocialProof />
-      <Steps />
+      {/* <Steps /> */}
       <Footer />
     </div>
   );

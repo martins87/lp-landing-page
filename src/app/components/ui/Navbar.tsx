@@ -9,7 +9,7 @@ import logo from "../../assets/LibertyIcon.svg";
 
 const navLinks = [
   { id: "#about-us", section: "About us" },
-  { id: "#send-now", section: "Send Now" },
+  // { id: "#send-now", section: "Send Now" },
   { id: "#countries", section: "Countries" },
   { id: "#contact-us", section: "Contact Us" },
 ];

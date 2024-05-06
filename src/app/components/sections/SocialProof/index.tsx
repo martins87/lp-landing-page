@@ -26,7 +26,7 @@ const reviews = [
 const SocialProof: FC = () => {
   return (
     <div
-      className="w-full h-[1100px] flex justify-center bg-white"
+      className="w-full h-[1000px] flex items-center justify-center bg-white"
       id="social-proof"
     >
       <div className="flex flex-col gap-y-28 my-48 w-[60%] items-center">
