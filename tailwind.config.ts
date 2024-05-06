@@ -10,11 +10,12 @@ const config: Config = {
     extend: {
       colors: {
         "green": "#5A4F4F",
+        'green-xl': '#5C743C',
         'really-light-green': '#F0FFF0',
         "light-green": "#99C35F",
+        "regular-green": "#7BB882",
         "dark-green": "#4CA69D",
         "btn-text": "#4CA69D",
-        "btn-green": "#7BB882",
       },
       fontFamily: {
         nunito: ["var(--font-nunito-sans)"],

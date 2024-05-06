@@ -29,14 +29,14 @@ const AboutUs: FC = () => {
       className="w-full h-auto flex items-center justify-center bg-white"
       id="about-us"
     >
-      <div className="flex flex-col mx-[12.5%] my-48 w-full">
+      <div className="w-[75%] h-auto flex flex-col mx-[12.5%] my-48">
         <h2 className="text-5xl text-green text-center font-bold tracking-wide">
           Connecting you to your family since 2016
         </h2>
         <h5 className="font-sans font-normal text-green text-[24px] text-center mt-4">
           The fastest and cheapest way to send money to friends or loved ones.
         </h5>
-        <div className="flex justify-between mt-28 gap-8">
+        <div className="flex justify-center mt-20 gap-20">
           {icons.map((i) => (
             <FeatureCard
               key={i.label}

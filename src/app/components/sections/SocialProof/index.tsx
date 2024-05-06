@@ -31,7 +31,7 @@ const SocialProof: FC = () => {
     >
       <div className="flex flex-col gap-y-28 my-48 w-[60%] items-center">
         <div className="flex flex-col gap-y-4 text-center">
-          <div className="text-4xl font-bold text-btn-green tracking-wide">
+          <div className="text-4xl font-bold text-regular-green tracking-wide">
             Customer reviews
           </div>
           <div className="text-2xl text-black">

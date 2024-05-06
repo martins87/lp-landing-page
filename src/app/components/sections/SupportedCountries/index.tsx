@@ -11,8 +11,8 @@ const Where: FC = () => {
       className="w-full h-[500px] flex items-center justify-center bg-white"
       id="countries"
     >
-      <div className="flex items-center justify-center gap-28 w-[75%] h-[80%] text-center tracking-wider bg-really-light-green rounded-[50px]">
-        {/* <div className="flex items-center justify-center gap-28 w-[80%] h-[80%] text-center tracking-wider bg-btn-green rounded-[50px]"> */}
+      <div className="w-[75%] h-[80%] flex items-center justify-center gap-28 text-center tracking-wider bg-really-light-green rounded-[50px]">
+        {/* <div className="flex items-center justify-center gap-28 w-[80%] h-[80%] text-center tracking-wider bg-regular-green rounded-[50px]"> */}
         <div className="flex gap-8">
           <FlagBox flag={BrazilFlag} />
           <FlagBox flag={GuatemalaFlag} />
