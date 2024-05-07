@@ -9,6 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       screens: {
+        'mobile': '512px',
         'tablet': '960px',
       },
       colors: {
