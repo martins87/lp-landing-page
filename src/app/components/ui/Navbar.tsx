@@ -42,11 +42,11 @@ const Navbar: FC = () => {
         isScrolling ? "border-b border-green/10" : ""
       )}
     >
-      <div className="flex items justify-between w-[75%]">
+      <div className="flex items justify-between w-full xl:w-[75%] mx-10 xl:mx-0">
         <Link className="flex items-center" href="/">
           <Image src={logo} alt="Liberty Pay logo" />
         </Link>
-        <ul className="flex items-center justify-between gap-10 pr-10">
+        <ul className="flex items-center justify-between gap-10">
           {navLinks.map((link) => (
             <li key={link.id} className="text-green text-lg">
               <a

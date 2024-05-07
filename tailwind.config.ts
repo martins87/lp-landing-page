@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        'tablet': '960px',
+      },
       colors: {
         "green": "#5A4F4F",
         'green-xl': '#5C743C',
@@ -23,6 +26,9 @@ const config: Config = {
       },
       dropShadow: {
         "3xl": "0 4.8px 4.8px rgba(0, 0, 0, 0.25)",
+      },
+      boxShadow: {
+        "hero-app": "0px 2px 12px 1px rgba(0, 0, 0, 0.5)",
       }
     },
   },
