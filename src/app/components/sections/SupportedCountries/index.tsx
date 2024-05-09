@@ -7,7 +7,7 @@ import DominicanRepublicFlag from "../../../assets/Dominican-Republic-flag.png";
 
 const Where: FC = () => {
   return (
-    <div
+    <section
       className="w-full h-[500px] flex items-center justify-center bg-white"
       id="countries"
     >
@@ -30,7 +30,7 @@ const Where: FC = () => {
           </h5>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

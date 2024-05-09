@@ -13,7 +13,7 @@ import ConvenienceStore from "../../../assets/convenience-store-3.jpeg";
 
 const AgentVsApp: FC = () => {
   return (
-    <div className="w-full h-[800px] flex items-center justify-center bg-white">
+    <section className="w-full h-[800px] flex items-center justify-center bg-white">
       <div className="w-[75%] h-[75%] flex items-center justify-around gap-10">
         <div className="w-[42.5%] h-[700px] flex flex-col justify-between p-14 bg-really-light-green rounded-[50px]">
           <div className="flex flex-col gap-4">
@@ -70,7 +70,7 @@ const AgentVsApp: FC = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

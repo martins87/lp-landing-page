@@ -7,7 +7,7 @@ import Screenshot from "../../../assets/map-1.png";
 
 const Hero: FC = () => {
   return (
-    <div className="flex items-center justify-center w-full h-auto bg-white">
+    <section className="flex items-center justify-center w-full h-auto bg-white">
       <div className="w-full xl:w-[75%] h-[80%] flex flex-col tablet:flex-row items-center justify-between gap-10 my-24 mx-10">
         <div className="flex flex-col tablet:gap-y-10 2xl:ml-[10%]">
           <h1 className="text-6xl text-green font-bold drop-shadow-3xl leading-[86.4px] text-center">
@@ -26,7 +26,7 @@ const Hero: FC = () => {
           alt="App screenshots"
         />
       </div>
-    </div>
+    </section>
   );
 };
 

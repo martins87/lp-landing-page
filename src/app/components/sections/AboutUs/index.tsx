@@ -25,7 +25,7 @@ const icons = [
 
 const AboutUs: FC = () => {
   return (
-    <div
+    <section
       className="w-full h-auto min-h-[1000px] flex items-center justify-center bg-white"
       id="about-us"
     >
@@ -47,7 +47,7 @@ const AboutUs: FC = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

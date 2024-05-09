@@ -19,7 +19,7 @@ const FeatureCard: FC<FeatureCardProps> = ({ icon, label, description }) => {
   return (
     <div
       className={twMerge(
-        "flex flex-col mobile:flex-row tablet:flex-col items-center justify-center rounded-[30px] xl:shadow-md gap-y-4 xl:gap-y-6",
+        "flex flex-col mobile:flex-row tablet:flex-col items-center justify-center rounded-[30px] xl:shadow-card gap-y-4 xl:gap-y-6",
         Object.values(responsiveClasses)
       )}
     >
