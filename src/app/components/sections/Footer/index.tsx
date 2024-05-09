@@ -21,31 +21,33 @@ const links = [
 
 const Footer: FC = () => {
   return (
-    <div className="flex items-center justify-center w-full h-[500px] bg-really-light-green/50">
-      <div className="flex justify-between w-[75%] gap-x-32">
-        <div className="-mt-5 min-w-48">
+    <footer className="flex items-center justify-center w-full h-auto min-h-[500px] bg-really-light-green/50">
+      <div className="flex flex-col tablet:flex-row gap-16 tablet:gap-0 justify-between w-full xl:w-[75%] mx-10 xl:mx-0 my-16">
+        <div className="tablet:-mt-5 max-w-52 min-w-48">
           <Image
             className="min-w-[243px] min-h-[63px]"
             src={logo}
             alt="Liberty Pay logo"
           />
         </div>
-        <div className="min-w-48">
-          <h3 className="text-2xl uppercase text-green font-bold mb-8">
+        <div className="max-w-56 min-w-48 tablet:ml-10">
+          <h3 className="text-xl 2xl:text-2xl uppercase text-green font-bold mb-8">
             company
           </h3>
           <ul>
             {links.map((link) => (
               <li className="mb-2 hover:font-bold" key={link.label}>
                 <Link href={link.url} rel="noopener noreferrer" target="_blank">
-                  <h5 className="text-xl text-green">{link.label}</h5>
+                  <h5 className="text-lg 2xl:text-xl text-green">
+                    {link.label}
+                  </h5>
                 </Link>
               </li>
             ))}
           </ul>
         </div>
-        <div className="min-w-48">
-          <h3 className="text-2xl uppercase text-green font-bold mb-8">
+        <div className="max-w-56 min-w-48">
+          <h3 className="text-xl 2xl:text-2xl uppercase text-green font-bold mb-8">
             follow us
           </h3>
           <div className="flex gap-x-6">
@@ -75,16 +77,16 @@ const Footer: FC = () => {
             </Link>
           </div>
         </div>
-        <div className="min-w-48">
-          <h3 className="text-xl text-green mb-2">
+        <div className="tablet:max-w-56 min-w-48">
+          <h3 className="text-lg 2xl:text-xl text-green mb-2">
             TIAGN I, Inc. NMLS # 1505655
           </h3>
-          <h3 className="text-xl text-green ">
+          <h3 className="text-lg 2xl:text-xl text-green ">
             TIAGN I Brasil Serviços De Tecnologia LTDA
           </h3>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 
