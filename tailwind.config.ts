@@ -30,6 +30,7 @@ const config: Config = {
       },
       boxShadow: {
         "hero-app": "0px 2px 12px 1px rgba(0, 0, 0, 0.5)",
+        "card": "0 12px 24px -8px rgba(0, 0, 0, 0.08)",
       }
     },
   },

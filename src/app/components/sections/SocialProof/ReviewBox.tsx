@@ -10,8 +10,8 @@ type ReviewBoxProps = {
 
 const ReviewBox: FC<ReviewBoxProps> = ({ review, customerName, date }) => {
   return (
-    <div className="w-[360px] h-[360px] flex rounded-[30px] shadow-xl">
-      <div className="relative flex flex-col p-8 gap-2">
+    <div className="w-full sm:w-auto h-auto min-h-[360px] flex rounded-[30px] shadow-card">
+      <div className="flex flex-col p-8 gap-2">
         <div className="flex mb-4">
           <StarIcon />
           <StarIcon />
@@ -19,10 +19,10 @@ const ReviewBox: FC<ReviewBoxProps> = ({ review, customerName, date }) => {
           <StarIcon />
           <StarIcon />
         </div>
-        <div className="max-w-80 font-sans font-normal text-base leading-8 text-black">
+        <div className="flex flex-1 max-w-80 font-sans font-normal text-base leading-8 text-black">
           {review}
         </div>
-        <div className="absolute bottom-5">
+        <div>
           <div className="text-xl leading-7 text-black font-bold mb-1">
             {customerName}
           </div>

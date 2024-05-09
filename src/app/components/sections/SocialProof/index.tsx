@@ -25,20 +25,20 @@ const reviews = [
 
 const SocialProof: FC = () => {
   return (
-    <div
+    <section
       className="w-full h-[1000px] flex items-center justify-center bg-white"
       id="social-proof"
     >
-      <div className="flex flex-col gap-y-28 my-48 w-[60%] items-center">
-        <div className="flex flex-col gap-y-4 text-center">
-          <div className="text-4xl font-bold text-regular-green tracking-wide">
+      <div className="w-full xl:w-[75%] flex flex-col gap-y-28 mx-10 xl:mx-0 my-48 items-center">
+        <div className="flex flex-col gap-y-2 xl:gap-y-4 text-center">
+          <div className="text-3xl xl:text-4xl font-bold text-regular-green tracking-wide">
             Customer reviews
           </div>
-          <div className="text-2xl text-black">
+          <div className="text-lg xl:text-2xl text-black">
             What our customers and agents say about us
           </div>
         </div>
-        <div className="grid grid-flow-col gap-x-[80px]">
+        <div className="w-full flex flex-col lg:flex-row items-center justify-evenly gap-6">
           {reviews.map((review, index) => (
             <ReviewBox
               key={+review + index}
@@ -49,7 +49,7 @@ const SocialProof: FC = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
