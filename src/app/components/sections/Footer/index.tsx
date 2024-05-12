@@ -25,7 +25,7 @@ const Footer: FC = () => {
       <div className="flex flex-col tablet:flex-row gap-16 tablet:gap-0 justify-between w-full xl:w-[75%] mx-10 xl:mx-0 my-16">
         <div className="tablet:-mt-5 max-w-52 min-w-48">
           <Image
-            className="min-w-[243px] min-h-[63px]"
+            className="w-36 md:w-auto md:min-w-[243px] md:min-h-[63px]"
             src={logo}
             alt="Liberty Pay logo"
           />
