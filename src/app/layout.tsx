@@ -30,10 +30,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${nunitoSans.variable} ${openSans.variable} font-nunito`}
-      >
+    <html
+      className={`${nunitoSans.variable} ${openSans.variable} font-nunito`}
+      lang="en"
+    >
+      <body>
         <Navbar />
         {children}
       </body>
