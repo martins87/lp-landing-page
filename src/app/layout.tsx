@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
-import { Open_Sans, Nunito_Sans } from "next/font/google";
+// import { Open_Sans, Nunito_Sans } from "next/font/google";
 import localFont from "@next/font/local";
 
 import Navbar from "./components/sections/Navbar/Navbar";
 
 import "./globals.css";
 
-const openSans = Open_Sans({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-opensans",
-});
+// const openSans = Open_Sans({
+//   subsets: ["latin"],
+//   weight: ["400", "500", "600", "700"],
+//   variable: "--font-opensans",
+// });
 
 // const nunitoSans = Nunito_Sans({
 //   subsets: ["latin"],
@@ -18,8 +18,10 @@ const openSans = Open_Sans({
 //   variable: "--font-nunito-sans",
 // });
 
-const ubuntuSans = localFont({ src: "./assets/fonts/UbuntuSans-Regular.ttf" });
-const nunito = localFont({ src: "./assets/fonts/NunitoSans_7pt-Regular.ttf" });
+// const ubuntuSans = localFont({ src: "./assets/fonts/UbuntuSans-Regular.ttf" });
+// const nunito = localFont({
+//   src: "./assets/fonts/NunitoSans_7pt-Regular.ttf",
+// });
 
 export const metadata: Metadata = {
   title:
@@ -36,7 +38,8 @@ export default function RootLayout({
   return (
     // <html className={`${nunitoSans.variable} ${openSans.variable}`} lang="en">
     // <html className={`${ubuntuSans.className}`} lang="en">
-    <html className={`${nunito.className}`} lang="en">
+    // <html className={`${nunito.className}`} lang="en">
+    <html lang="en">
       <body>
         <Navbar />
         {children}
