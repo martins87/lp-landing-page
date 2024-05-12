@@ -5,11 +5,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { twMerge } from "tailwind-merge";
 
-import logo from "../../assets/LibertyIcon.svg";
-import HamburgerIcon from "../../assets/hamburger.svg";
-import CloseIcon from "../../assets/close.svg";
+import logo from "../../../assets/LibertyIcon.svg";
 import NavLinks from "./NavLinks";
 import MobileMenu from "./MobileMenu";
+import HamburgerIcon from "./HamburgerIcon";
+import CloseIcon from "./CloseIcon";
 
 const navLinks = [
   { id: "#about-us", section: "About us" },
@@ -22,17 +22,17 @@ const Navbar: FC = () => {
   const [isScrolling, setIsScrolling] = useState<boolean>(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
 
-  const handleScroll = () => {
-    const scrollTop = window.scrollY;
-
-    if (scrollTop > 0) {
-      setIsScrolling(true);
-    } else {
-      setIsScrolling(false);
-    }
-  };
-
   useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+
+      if (scrollTop > 0) {
+        setIsScrolling(true);
+      } else {
+        setIsScrolling(false);
+      }
+    };
+
     window.addEventListener("scroll", handleScroll);
 
     return () => {
@@ -62,21 +62,9 @@ const Navbar: FC = () => {
           </Link>
           <NavLinks links={navLinks} />
           {!isMobileMenuOpen && (
-            <Image
-              className="md:hidden hover:cursor-pointer hover:scale-110 hover:duration-200"
-              src={HamburgerIcon}
-              alt="Hamburger icon"
-              onClick={openMobileMenu}
-            />
+            <HamburgerIcon handleClickFn={openMobileMenu} />
           )}
-          {isMobileMenuOpen && (
-            <Image
-              className="w-[40px] hover:cursor-pointer hover:scale-110"
-              src={CloseIcon}
-              alt="Close icon"
-              onClick={closeMobileMenu}
-            />
-          )}
+          {isMobileMenuOpen && <CloseIcon handleClickFn={closeMobileMenu} />}
         </div>
       </nav>
       <MobileMenu

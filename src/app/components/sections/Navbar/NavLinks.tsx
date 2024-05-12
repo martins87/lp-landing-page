@@ -16,7 +16,13 @@ const NavLinks: FC<NavLinksProps> = ({ links, mobile, handleClick }) => {
       )}
     >
       {links.map((link) => (
-        <li key={link.id} className="text-green text-lg">
+        <li
+          key={link.id}
+          className={twMerge(
+            "text-green text-lg",
+            mobile && link.id !== "#contact-us" ? "-ml-16" : ""
+          )}
+        >
           <a
             className={
               link.id === "#contact-us"
