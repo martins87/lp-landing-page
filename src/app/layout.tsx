@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 // import { Open_Sans, Nunito_Sans } from "next/font/google";
-import localFont from "@next/font/local";
+// import localFont from "@next/font/local";
 
 import Navbar from "./components/sections/Navbar/Navbar";
 
