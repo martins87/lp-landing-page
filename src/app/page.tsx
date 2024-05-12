@@ -12,7 +12,7 @@ export default function Home() {
       <Hero />
       <SupportedCountries />
       <AboutUs />
-      <AgentVsApp />
+      {/* <AgentVsApp /> */}
       <SocialProof />
       {/* <Steps /> */}
       <Footer />

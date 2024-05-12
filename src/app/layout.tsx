@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Open_Sans, Nunito_Sans } from "next/font/google";
+import localFont from "@next/font/local";
 
 import Navbar from "./components/sections/Navbar/Navbar";
 
@@ -11,11 +12,14 @@ const openSans = Open_Sans({
   variable: "--font-opensans",
 });
 
-const nunitoSans = Nunito_Sans({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-nunito-sans",
-});
+// const nunitoSans = Nunito_Sans({
+//   subsets: ["latin"],
+//   weight: ["400", "500", "600", "700"],
+//   variable: "--font-nunito-sans",
+// });
+
+const ubuntuSans = localFont({ src: "./assets/fonts/UbuntuSans-Regular.ttf" });
+const nunito = localFont({ src: "./assets/fonts/NunitoSans_7pt-Regular.ttf" });
 
 export const metadata: Metadata = {
   title:
@@ -30,7 +34,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html className={`${nunitoSans.variable} ${openSans.variable}`} lang="en">
+    // <html className={`${nunitoSans.variable} ${openSans.variable}`} lang="en">
+    // <html className={`${ubuntuSans.className}`} lang="en">
+    <html className={`${nunito.className}`} lang="en">
       <body>
         <Navbar />
         {children}

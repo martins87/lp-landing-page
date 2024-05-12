@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { twMerge } from "tailwind-merge";
 
-import logo from "../../../assets/LibertyIcon.svg";
+import logo from "../../../assets/images/LibertyIcon.svg";
 import NavLinks from "./NavLinks";
 import MobileMenu from "./MobileMenu";
 import HamburgerIcon from "./HamburgerIcon";

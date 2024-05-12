@@ -1,11 +1,11 @@
 import { FC } from "react";
 import Image from "next/image";
 
-import Step1 from "../../../assets/Step1.png";
-import Step2 from "../../../assets/Step2.png";
-import Step3 from "../../../assets/Step3.png";
-import Step4 from "../../../assets/Step4.png";
-import Step5 from "../../../assets/Step5.png";
+import Step1 from "../../../assets/images/Step1.png";
+import Step2 from "../../../assets/images/Step2.png";
+import Step3 from "../../../assets/images/Step3.png";
+import Step4 from "../../../assets/images/Step4.png";
+import Step5 from "../../../assets/images/Step5.png";
 
 const Steps: FC = () => {
   return (

@@ -2,14 +2,14 @@ import { FC } from "react";
 import Image from "next/image";
 
 import Button from "../../ui/Button";
-import App1 from "../../../assets/delivered.png";
-import App2 from "../../../assets/map.png";
-import App3 from "../../../assets/new-transaction.png";
-import App4 from "../../../assets/overview.png";
-import App5 from "../../../assets/my-account.png";
-import AppStore from "../../../assets/app-store.svg";
-import GooglePlay from "../../../assets/google-play.svg";
-import ConvenienceStore from "../../../assets/convenience-store-3.jpeg";
+import App1 from "../../../assets/images/delivered.png";
+import App2 from "../../../assets/images/map.png";
+import App3 from "../../../assets/images/new-transaction.png";
+import App4 from "../../../assets/images/overview.png";
+import App5 from "../../../assets/images/my-account.png";
+import AppStore from "../../../assets/images/app-store.svg";
+import GooglePlay from "../../../assets/images/google-play.svg";
+import ConvenienceStore from "../../../assets/images/convenience-store-3.jpeg";
 
 const AgentVsApp: FC = () => {
   return (

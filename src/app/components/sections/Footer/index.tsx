@@ -2,7 +2,7 @@ import { FC } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-import logo from "../../../assets/LibertyIcon.svg";
+import logo from "../../../assets/images/LibertyIcon.svg";
 import InstagramIcon from "./InstagramIcon";
 import FacebookIcon from "./FacebookIcon";
 import YouTubeIcon from "./YouTubeIcon";
