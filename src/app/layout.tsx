@@ -7,13 +7,13 @@ import "./globals.css";
 
 const openSans = Open_Sans({
   subsets: ["latin"],
-  weight: ["400", "500"],
+  weight: ["400", "500", "600", "700"],
   variable: "--font-opensans",
 });
 
 const nunitoSans = Nunito_Sans({
   subsets: ["latin"],
-  weight: ["400", "500"],
+  weight: ["400", "500", "600", "700"],
   variable: "--font-nunito-sans",
 });
 
@@ -30,10 +30,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      className={`${nunitoSans.variable} ${openSans.variable} font-nunito`}
-      lang="en"
-    >
+    <html className={`${nunitoSans.variable} ${openSans.variable}`} lang="en">
       <body>
         <Navbar />
         {children}

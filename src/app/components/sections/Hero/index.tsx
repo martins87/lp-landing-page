@@ -2,7 +2,6 @@ import { FC } from "react";
 import Image from "next/image";
 
 import Button from "../../ui/Button";
-import AppScreenshots from "../../../assets/hero.png";
 import Screenshot from "../../../assets/map-1.png";
 
 const Hero: FC = () => {

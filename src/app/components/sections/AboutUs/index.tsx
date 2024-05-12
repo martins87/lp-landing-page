@@ -1,7 +1,7 @@
 import { FC } from "react";
 
 import FeatureCard from "./FeatureCard";
-import StopWatch from "../../../assets/StopWatch.svg";
+import StopWatch from "../../../assets/Stopwatch.svg";
 import MoneyBag from "../../../assets/MoneyBag.svg";
 import Lock from "../../../assets/Lock.svg";
 
