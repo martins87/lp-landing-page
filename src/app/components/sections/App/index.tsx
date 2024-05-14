@@ -13,7 +13,7 @@ const App: FC = () => {
 
   return (
     <section className="w-full flex items-center justify-center bg-white">
-      <div className="w-[75%] h-auto flex flex-col tablet:flex-row justify-between gap-4 tablet:gap-10 xl:gap-28">
+      <div className="w-[60%] h-auto flex flex-col tablet:flex-row justify-between gap-4 tablet:gap-10 xl:gap-28">
         <div className="scale-75 lg:scale-90 xl:scale-95 2xl:scale-100 relative flex items-center justify-center gap-3 xl:py-20 rounded-[50px]">
           <Image
             className="w-36 min-w-36 z-[2]"

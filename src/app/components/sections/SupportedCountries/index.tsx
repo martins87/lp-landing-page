@@ -11,17 +11,17 @@ const Where: FC = () => {
       className="w-full h-[500px] flex items-center justify-center bg-white"
       id="countries"
     >
-      <div className="w-[75%] h-[80%] flex flex-col lg:flex-row items-center justify-evenly lg:justify-between px-10 lg:px-20 xl:px-24 text-center tracking-wider bg-really-light-green rounded-[50px]">
-        <div className="lg:order-first flex gap-8">
+      <div className="w-[75%] tablet:w-[60%] h-[80%] flex flex-col xl:flex-row items-center justify-evenly px-10 lg:px-20 xl:px-12 text-center tracking-wider bg-regular-green/10 rounded-[50px]">
+        <div className="xl:order-first flex gap-8">
           <FlagBox flag={BrazilFlag} />
           <FlagBox flag={GuatemalaFlag} />
           <FlagBox flag={DominicanRepublicFlag} />
         </div>
-        <div className="order-first lg:w-[30%] xl:w-[40%]">
-          <h5 className="mt-6 text-green text-center text-2xl lg:text-3xl font-bold">
-            Supported countries
+        <div className="order-first flex flex-col justify-between text-left gap-2 xl:w-[30%] 2xl:w-[40%]">
+          <h5 className="capitalize text-green text-center xl:text-left text-2xl tablet:text-3xl font-bold">
+            supported countries
           </h5>
-          <h5 className="mt-6 text-green text-center text-base lg:text-xl">
+          <h5 className="text-green text-center xl:text-left text-base tablet:text-lg">
             LibertyPay currently allows you to send to friends and family in
             Brazil, Guatemala and Dominican Republic
           </h5>

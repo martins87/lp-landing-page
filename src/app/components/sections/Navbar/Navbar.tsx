@@ -50,7 +50,7 @@ const Navbar: FC = () => {
           isScrolling ? "border-b border-green/10 h-[65px]" : "h-16"
         )}
       >
-        <div className="flex items-center justify-between w-full xl:w-[75%] mx-10 xl:mx-0">
+        <div className="flex items-center justify-between w-full xl:w-[60%] mx-10 xl:mx-0">
           <Logo />
           <NavLinks links={navLinks} />
           {!isMobileMenuOpen && <HamburgerIcon onClick={openMobileMenu} />}

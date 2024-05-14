@@ -29,7 +29,7 @@ const SocialProof: FC = () => {
       className="w-full h-auto min-h-[1000px] flex items-center justify-center bg-white"
       id="social-proof"
     >
-      <div className="w-full xl:w-[75%] flex flex-col gap-y-28 mx-10 xl:mx-0 my-48 items-center">
+      <div className="w-full xl:w-[60%] flex flex-col gap-y-28 mx-10 xl:mx-0 my-48 items-center">
         <div className="flex flex-col gap-y-2 xl:gap-y-4 text-center">
           <div className="text-2xl mobile:text-3xl xl:text-4xl font-bold text-regular-green tracking-wide">
             Customer reviews

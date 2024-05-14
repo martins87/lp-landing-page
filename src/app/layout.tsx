@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 // import localFont from "@next/font/local";
 
 import Navbar from "./components/sections/Navbar/Navbar";
+import Footer from "./components/sections/Footer";
 
 import "./globals.css";
 
@@ -36,13 +37,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    // <html className={`${nunitoSans.variable} ${openSans.variable}`} lang="en">
     // <html className={`${ubuntuSans.className}`} lang="en">
     // <html className={`${nunito.className}`} lang="en">
     <html lang="en">
+      {/* <html className={`${nunitoSans.variable} ${openSans.variable}`} lang="en"> */}
       <body>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
