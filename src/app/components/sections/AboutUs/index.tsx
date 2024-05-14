@@ -30,7 +30,7 @@ const AboutUs: FC = () => {
       id="about-us"
     >
       <div className="w-full xl:w-[75%] h-auto flex flex-col mx-10 xl:mx-[12.5%] my-48">
-        <h2 className="text-2xl tablet:text-3xl 2xl:text-4xl text-green text-center font-bold tracking-wide">
+        <h2 className="text-2xl tablet:text-3xl 2xl:text-4xl text-green-xl text-center font-bold">
           Connecting you to your family since 2016
         </h2>
         <h5 className="font-sans font-normal text-green text-lg tablet:text-xl text-center mt-4">

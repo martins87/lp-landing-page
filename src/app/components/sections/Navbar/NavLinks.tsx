@@ -26,7 +26,7 @@ const NavLinks: FC<NavLinksProps> = ({ links, mobile, onClick }) => {
           <a
             className={
               link.id === "#contact-us"
-                ? "bg-regular-green rounded-full px-6 py-3 text-white tracking-wide no-underline hover:bg-green-xl"
+                ? "bg-regular-green rounded-full px-4 py-2 text-white tracking-wide no-underline hover:bg-green-xl"
                 : "hover:font-bold no-underline"
             }
             href={

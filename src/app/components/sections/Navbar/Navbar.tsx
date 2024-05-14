@@ -47,7 +47,7 @@ const Navbar: FC = () => {
       <nav
         className={twMerge(
           "flex justify-center sticky top-0 left-0 z-[10] w-full bg-white",
-          isScrolling ? "border-b border-green/10 h-[81px]" : "h-20"
+          isScrolling ? "border-b border-green/10 h-[65px]" : "h-16"
         )}
       >
         <div className="flex items-center justify-between w-full xl:w-[75%] mx-10 xl:mx-0">
