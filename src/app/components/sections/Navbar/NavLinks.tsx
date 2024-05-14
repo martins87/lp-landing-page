@@ -4,10 +4,10 @@ import { twMerge } from "tailwind-merge";
 type NavLinksProps = {
   links: any[];
   mobile?: boolean;
-  handleClick?: () => void;
+  onClick?: () => void;
 };
 
-const NavLinks: FC<NavLinksProps> = ({ links, mobile, handleClick }) => {
+const NavLinks: FC<NavLinksProps> = ({ links, mobile, onClick }) => {
   return (
     <ul
       className={twMerge(
@@ -19,7 +19,7 @@ const NavLinks: FC<NavLinksProps> = ({ links, mobile, handleClick }) => {
         <li
           key={link.id}
           className={twMerge(
-            "text-green text-lg",
+            "text-green text-base",
             mobile && link.id !== "#contact-us" ? "-ml-16" : ""
           )}
         >
@@ -34,7 +34,7 @@ const NavLinks: FC<NavLinksProps> = ({ links, mobile, handleClick }) => {
                 ? "https://libertypay.activehosted.com/f/1"
                 : link.id
             }
-            onClick={handleClick}
+            onClick={onClick}
           >
             {link.section}
           </a>

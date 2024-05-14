@@ -1,14 +1,14 @@
 import { FC } from "react";
 
 type CloseIconProps = {
-  handleClickFn: () => void;
+  onClick: () => void;
 };
 
-const CloseIcon: FC<CloseIconProps> = ({ handleClickFn }) => {
+const CloseIcon: FC<CloseIconProps> = ({ onClick }) => {
   return (
     <div
       className="md:hidden hover:cursor-pointer hover:scale-110 fill-current text-regular-green"
-      onClick={handleClickFn}
+      onClick={onClick}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"

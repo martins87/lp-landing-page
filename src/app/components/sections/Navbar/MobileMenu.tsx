@@ -6,10 +6,10 @@ import NavLinks from "./NavLinks";
 type MobileMenuProps = {
   open: boolean;
   links: any[];
-  handleClick?: () => void;
+  onClick?: () => void;
 };
 
-const MobileMenu: FC<MobileMenuProps> = ({ open, links, handleClick }) => {
+const MobileMenu: FC<MobileMenuProps> = ({ open, links, onClick }) => {
   return (
     <div
       className={twMerge(
@@ -18,7 +18,7 @@ const MobileMenu: FC<MobileMenuProps> = ({ open, links, handleClick }) => {
       )}
     >
       <div className="m-10">
-        <NavLinks links={links} handleClick={handleClick} mobile />
+        <NavLinks links={links} onClick={onClick} mobile />
       </div>
     </div>
   );

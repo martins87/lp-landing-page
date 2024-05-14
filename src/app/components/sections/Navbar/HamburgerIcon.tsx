@@ -1,14 +1,14 @@
 import { FC } from "react";
 
 type HamburgerIconProps = {
-  handleClickFn: () => void;
+  onClick: () => void;
 };
 
-const HamburgerIcon: FC<HamburgerIconProps> = ({ handleClickFn }) => {
+const HamburgerIcon: FC<HamburgerIconProps> = ({ onClick }) => {
   return (
     <div
       className="md:hidden hover:cursor-pointer hover:scale-110 hover:duration-200"
-      onClick={handleClickFn}
+      onClick={onClick}
     >
       <svg
         className="md:hidden hover:cursor-pointer hover:scale-105 hover:duration-200 fill-current text-regular-green"

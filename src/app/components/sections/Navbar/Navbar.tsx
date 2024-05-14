@@ -1,15 +1,13 @@
 "use client";
 
 import { FC, Fragment, useEffect, useState } from "react";
-import Image from "next/image";
-import Link from "next/link";
 import { twMerge } from "tailwind-merge";
 
-import logo from "../../../assets/images/LibertyIcon.svg";
 import NavLinks from "./NavLinks";
 import MobileMenu from "./MobileMenu";
 import HamburgerIcon from "./HamburgerIcon";
 import CloseIcon from "./CloseIcon";
+import Logo from "../../ui/Logo";
 
 const navLinks = [
   { id: "#about-us", section: "About us" },
@@ -53,24 +51,16 @@ const Navbar: FC = () => {
         )}
       >
         <div className="flex items-center justify-between w-full xl:w-[75%] mx-10 xl:mx-0">
-          <Link className="flex items-center" href="/">
-            <Image
-              className="w-36 md:w-auto"
-              src={logo}
-              alt="Liberty Pay logo"
-            />
-          </Link>
+          <Logo />
           <NavLinks links={navLinks} />
-          {!isMobileMenuOpen && (
-            <HamburgerIcon handleClickFn={openMobileMenu} />
-          )}
-          {isMobileMenuOpen && <CloseIcon handleClickFn={closeMobileMenu} />}
+          {!isMobileMenuOpen && <HamburgerIcon onClick={openMobileMenu} />}
+          {isMobileMenuOpen && <CloseIcon onClick={closeMobileMenu} />}
         </div>
       </nav>
       <MobileMenu
         open={isMobileMenuOpen}
         links={navLinks}
-        handleClick={closeMobileMenu}
+        onClick={closeMobileMenu}
       />
     </Fragment>
   );
