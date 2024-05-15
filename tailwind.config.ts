@@ -22,8 +22,10 @@ const config: Config = {
         "btn-text": "#4CA69D",
       },
       fontFamily: {
-        nunito: ["var(--font-nunito-sans)"],
-        sans: ["var(--font-opensans)"],
+        inter: ["var(--font-inter)"],
+        // roboto: ["var(--font-roboto-flex)"],
+        // nunito: ["var(--font-nunito-sans)"],
+        // sans: ["var(--font-opensans)"],
       },
       dropShadow: {
         "3xl": "0 4.8px 4.8px rgba(0, 0, 0, 0.25)",
