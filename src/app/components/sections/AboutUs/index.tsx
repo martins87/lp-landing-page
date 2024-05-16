@@ -9,17 +9,17 @@ const icons = [
   {
     icon: StopWatch,
     label: "Fast",
-    description: "Transactions complete fast with live updates.",
+    description: "Transactions complete fast with live updates",
   },
   {
     icon: MoneyBag,
     label: "Best rate",
-    description: "Visit a location today and see how much you can save.",
+    description: "Visit a location today and see how much you can save",
   },
   {
     icon: Lock,
     label: "Safe",
-    description: "Regulated by State and Federal US Government Agencies.",
+    description: "Regulated by State and Federal US Government Agencies",
   },
 ];
 
