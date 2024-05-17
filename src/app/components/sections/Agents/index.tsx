@@ -20,7 +20,7 @@ const Agents: FC = () => {
             <h2 className="text-green-xl text-3xl font-bold">
               Licensed Agent Stores
             </h2>
-            <h5 className="text-green text-lg font-sans font-normal">
+            <h5 className="text-green text-lg font-normal">
               Ideally located on your trusted convenience store, all the
               benefits of sending with LibertyPay at your everyday store.
             </h5>

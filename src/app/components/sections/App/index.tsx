@@ -35,7 +35,7 @@ const App: FC = () => {
         <div className="flex flex-col items-center tablet:items-start justify-center gap-12">
           <div className="flex flex-col gap-4 text-center tablet:text-left">
             <h2 className="text-green-xl text-3xl font-bold">Mobile app</h2>
-            <h5 className="text-green text-lg font-sans font-normal">
+            <h5 className="text-green text-lg font-normal">
               <p>Send money home from the convenience of your own phone.</p>
               <p>Download the LibertyPay App and start saving.</p>
             </h5>

@@ -6,6 +6,7 @@ import AboutUs from "../components/sections/AboutUs";
 import Agents from "../components/sections/Agents";
 import Button from "../components/ui/Button";
 import Sticker from "../assets/images/sticker.png";
+import SocialProof from "../components/sections/SocialProof";
 
 const AgentsPage = () => {
   return (
@@ -33,6 +34,7 @@ const AgentsPage = () => {
       <SupportedCountries />
       <AboutUs />
       <Agents />
+      <SocialProof agentsVersion />
     </Fragment>
   );
 };
