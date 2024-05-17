@@ -26,10 +26,10 @@ const icons = [
 const AboutUs: FC = () => {
   return (
     <section
-      className="w-full h-auto min-h-[1000px] flex items-center justify-center bg-white"
+      className="w-full h-auto flex items-center justify-center bg-white"
       id="about-us"
     >
-      <div className="w-full xl:w-[60%] h-auto flex flex-col mx-10 xl:mx-[12.5%] my-24 tablet:my-48">
+      <div className="w-full xl:w-[60%] h-auto flex flex-col mx-10 xl:mx-[12.5%] my-24 tablet:my-16">
         <h2 className="text-2xl tablet:text-3xl 2xl:text-4xl text-green-xl text-center font-bold">
           Connecting you to your family since 2016
         </h2>

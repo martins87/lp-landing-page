@@ -6,8 +6,8 @@ import Screenshot from "../../../assets/images/map-1.png";
 
 const Hero: FC = () => {
   return (
-    <section className="flex items-center justify-center w-full h-auto tablet:h-[80vh] bg-white">
-      <div className="w-full xl:w-[60%] flex flex-col tablet:flex-row items-center justify-between gap-20 tablet:gap-0 my-24 tablet:my-16 mx-10">
+    <section className="w-full h-auto tablet:h-[80vh] flex items-center justify-center bg-white">
+      <div className="w-full xl:w-[60%] flex flex-col tablet:flex-row items-center justify-between gap-20 tablet:gap-0 my-24 tablet:my-16 mx-10 xl:mx-0">
         <div className="flex flex-col justify-evenly gap-6 tablet:gap-y-6 text-center tablet:text-left">
           <h1 className="text-5xl tablet:text-5xl text-green font-bold drop-shadow-3xl leading-[64px] tablet:leading-[80px]">
             Save when you send

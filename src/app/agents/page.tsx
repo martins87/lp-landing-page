@@ -3,10 +3,11 @@ import Image from "next/image";
 
 import SupportedCountries from "../components/sections/SupportedCountries";
 import AboutUs from "../components/sections/AboutUs";
+import Agents from "../components/sections/Agents";
 import Button from "../components/ui/Button";
 import GeneralAgents from "../assets/images/general-agents.png";
 
-const Agents = () => {
+const AgentsPage = () => {
   return (
     <Fragment>
       <section className="flex items-center justify-center w-full h-auto tablet:h-[80vh] bg-white">
@@ -35,8 +36,9 @@ const Agents = () => {
       </section>
       <SupportedCountries />
       <AboutUs />
+      <Agents />
     </Fragment>
   );
 };
 
-export default Agents;
+export default AgentsPage;
