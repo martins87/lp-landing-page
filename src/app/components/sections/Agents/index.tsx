@@ -3,11 +3,12 @@ import Image from "next/image";
 
 import ConvenienceStore from "../../../assets/images/convenience-store-3.jpeg";
 import Button from "../../ui/Button";
+import Container from "../../ui/Container";
 
 const Agents: FC = () => {
   return (
-    <section className="w-full h-auto flex items-center justify-center bg-white">
-      <div className="w-full xl:w-[60%] h-auto flex items-center justify-center flex-col tablet:flex-row mx-10 xl:mx-0 my-24 tablet:my-32 gap-10 tablet:gap-20 xl:gap-28">
+    <Container>
+      <section className="w-full xl:w-[60%] h-auto flex items-center justify-center flex-col tablet:flex-row mx-10 xl:mx-0 my-24 tablet:my-32 gap-10 tablet:gap-20 xl:gap-28">
         <div className="w-[80%] mobile:w-[75%] tablet:w-full rounded-[50px]">
           <Image
             className="rounded-2xl z-[2]"
@@ -31,8 +32,8 @@ const Agents: FC = () => {
             </Button>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </Container>
   );
 };
 

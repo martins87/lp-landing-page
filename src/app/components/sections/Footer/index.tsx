@@ -6,6 +6,7 @@ import InstagramIcon from "./InstagramIcon";
 import FacebookIcon from "./FacebookIcon";
 import YouTubeIcon from "./YouTubeIcon";
 import Logo from "../../ui/Logo";
+import Container from "../../ui/Container";
 
 const links = [
   { label: "Contact us", url: "https://libertypay.activehosted.com/f/1" },
@@ -23,8 +24,8 @@ const Footer: FC = () => {
   const linksClass = "text-base text-green";
 
   return (
-    <footer className="flex items-center justify-center w-full h-auto bg-really-light-green">
-      <div className="flex flex-col tablet:flex-row gap-16 tablet:gap-0 justify-between w-full xl:w-[60%] mx-10 xl:mx-0 my-16">
+    <Container className="bg-really-light-green">
+      <footer className="flex flex-col tablet:flex-row gap-16 tablet:gap-0 justify-between w-full xl:w-[60%] mx-10 xl:mx-0 my-16">
         <div className="tablet:-mt-4 max-w-52 min-w-48">
           <Logo />
         </div>
@@ -81,8 +82,8 @@ const Footer: FC = () => {
             TIAGN I Brasil Serviços De Tecnologia LTDA
           </h3>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </Container>
   );
 };
 

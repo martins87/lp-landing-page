@@ -4,6 +4,7 @@ import FeatureCard from "./FeatureCard";
 import StopWatch from "../../../assets/images/Stopwatch.svg";
 import MoneyBag from "../../../assets/images/MoneyBag.svg";
 import Lock from "../../../assets/images/Lock.svg";
+import Container from "../../ui/Container";
 
 const icons = [
   {
@@ -25,11 +26,11 @@ const icons = [
 
 const AboutUs: FC = () => {
   return (
-    <section
-      className="w-full h-auto flex items-center justify-center bg-white"
-      id="about-us"
-    >
-      <div className="w-full xl:w-[60%] h-auto flex flex-col mx-10 xl:mx-[12.5%] my-24 tablet:my-16">
+    <Container>
+      <section
+        className="w-full xl:w-[60%] h-auto flex flex-col mx-10 xl:mx-[12.5%] my-24 tablet:my-16"
+        id="about-us"
+      >
         <h2 className="text-2xl tablet:text-3xl 2xl:text-4xl text-green-xl text-center font-bold">
           Connecting you to your family since 2016
         </h2>
@@ -46,8 +47,8 @@ const AboutUs: FC = () => {
             />
           ))}
         </div>
-      </div>
-    </section>
+      </section>
+    </Container>
   );
 };
 

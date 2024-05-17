@@ -1,6 +1,7 @@
 import { FC } from "react";
 
 import ReviewBox from "./ReviewBox";
+import Container from "../../ui/Container";
 
 const reviews = [
   {
@@ -57,11 +58,11 @@ const SocialProof: FC<SocialProofProps> = ({ agentsVersion }) => {
     : reviews.filter((r) => r.version !== "agent");
 
   return (
-    <section
-      className="w-full h-auto flex items-center justify-center bg-white"
-      id="social-proof"
-    >
-      <div className="w-full xl:w-[60%] flex flex-col gap-y-20 tablet:gap-y-28 mx-10 xl:mx-0 my-24 tablet:my-16 items-center">
+    <Container>
+      <section
+        className="w-full xl:w-[60%] flex flex-col gap-y-20 tablet:gap-y-28 mx-10 xl:mx-0 my-24 tablet:my-16 items-center"
+        id="social-proof"
+      >
         <div className="flex flex-col gap-y-1 text-center">
           <div className="text-2xl mobile:text-3xl xl:text-4xl font-bold text-regular-green tracking-wide">
             Customer reviews
@@ -80,8 +81,8 @@ const SocialProof: FC<SocialProofProps> = ({ agentsVersion }) => {
             />
           ))}
         </div>
-      </div>
-    </section>
+      </section>
+    </Container>
   );
 };
 
