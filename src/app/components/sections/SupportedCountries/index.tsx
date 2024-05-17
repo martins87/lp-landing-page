@@ -21,7 +21,7 @@ const Where: FC = () => {
           <h5 className="capitalize text-green-xl text-center xl:text-left text-2xl tablet:text-3xl font-bold">
             supported countries
           </h5>
-          <h5 className="text-black text-center xl:text-left text-base">
+          <h5 className="text-green text-center xl:text-left text-lg">
             LibertyPay currently allows you to send to friends and family in
             Brazil, Guatemala and Dominican Republic
           </h5>

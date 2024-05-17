@@ -33,7 +33,7 @@ const AboutUs: FC = () => {
         <h2 className="text-2xl tablet:text-3xl 2xl:text-4xl text-green-xl text-center font-bold">
           Connecting you to your family since 2016
         </h2>
-        <h5 className="font-sans font-normal text-green text-lg tablet:text-xl text-center mt-2">
+        <h5 className="font-sans text-green text-lg tablet:text-xl text-center mt-2">
           The fastest and cheapest way to send money to friends or loved ones.
         </h5>
         <div className="w-full flex flex-col tablet:flex-row justify-center mt-20 gap-16 tablet:gap-10">

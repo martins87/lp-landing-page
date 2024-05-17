@@ -14,7 +14,7 @@ const Button: FC<ButtonProps> = ({ href, white, capitalize, children }) => {
       href={href}
       target="_blank"
       className={twMerge(
-        "flex items-center justify-center rounded-full px-10 py-3 w-fit text-xl drop-shadow-3xl",
+        "flex items-center justify-center rounded-full px-10 py-3 w-fit text-lg drop-shadow-3xl",
         capitalize ? "capitalize" : "",
         white
           ? "bg-white text-btn-text hover:bg-regular-green hover:bg-opacity-10 hover:text-white"
