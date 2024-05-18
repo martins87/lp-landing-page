@@ -31,10 +31,10 @@ const FeatureCard: FC<FeatureCardProps> = ({ icon, label, description }) => {
         />
       </div>
       <div className="flex flex-col gap-4">
-        <h5 className="text-2xl 2xl:text-3xl text-green text-center font-bold tracking-wide">
+        <h5 className="text-2xl text-green text-center font-bold tracking-wide">
           {label}
         </h5>
-        <h5 className="text-base 2xl:text-xl text-green text-center px-8 max-w-[312px] xl:max-w-[346px]">
+        <h5 className="text-base text-green text-center px-8 max-w-[312px] xl:max-w-[346px]">
           {description}
         </h5>
       </div>

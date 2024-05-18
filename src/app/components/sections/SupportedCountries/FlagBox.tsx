@@ -9,7 +9,7 @@ type FlagBoxProps = {
 const responsiveClasses = {
   default: "rounded-full w-16 h-16 min-w-16 drop-shadow-2xl",
   mobile: "mobile:w-20 mobile:h-20 mobile:min-w-20 mobile:min-h-20",
-  sm: "sm:w-28 sm:h-28 sm:min-w-28 sm:min-h-28",
+  tablet: "tablet:w-28 tablet:h-28 tablet:min-w-28 tablet:min-h-28",
 };
 
 const FlagBox: FC<FlagBoxProps> = ({ flag }) => {

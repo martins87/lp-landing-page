@@ -60,11 +60,11 @@ const SocialProof: FC<SocialProofProps> = ({ agentsVersion }) => {
   return (
     <Container>
       <section
-        className="w-full xl:w-[60%] flex flex-col gap-y-20 tablet:gap-y-28 mx-10 xl:mx-0 my-24 tablet:my-16 items-center"
+        className="w-full xl:w-[60%] flex flex-col gap-y-10 tablet:gap-y-14 mx-10 xl:mx-0 my-24 tablet:my-16 items-center"
         id="social-proof"
       >
         <div className="flex flex-col gap-y-1 text-center">
-          <div className="text-2xl mobile:text-3xl xl:text-4xl font-bold text-regular-green tracking-wide">
+          <div className="text-2xl mobile:text-3xl font-bold text-regular-green">
             Customer reviews
           </div>
           <div className="text-base mobile:text-lg xl:text-xl text-green">

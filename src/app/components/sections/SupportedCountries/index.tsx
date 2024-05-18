@@ -8,9 +8,9 @@ import Container from "../../ui/Container";
 
 const Where: FC = () => {
   return (
-    <Container className="h-[500px]">
+    <Container className="">
       <div
-        className="w-[75%] tablet:w-[60%] h-[80%] flex flex-col gap-2 my-24 tablet:my-16 xl:gap-8 xl:flex-row items-center justify-evenly px-10 lg:px-20 xl:px-12 text-center tracking-wider bg-really-light-green rounded-[50px]"
+        className="w-[75%] tablet:w-[60%] flex flex-col xl:flex-row items-center justify-evenly gap-8 xl:gap-8 my-20 tablet:mt-16 tablet:mb-32 py-10 tablet:py-16 px-10 lg:px-20 xl:px-12 text-center tracking-wider bg-really-light-green rounded-[50px]"
         id="countries"
       >
         <div className="xl:order-first flex gap-6 mobile:gap-8">
@@ -18,9 +18,9 @@ const Where: FC = () => {
           <FlagBox flag={GuatemalaFlag} />
           <FlagBox flag={DominicanRepublicFlag} />
         </div>
-        <div className="order-first flex flex-col justify-between text-left gap-4 xl:w-[30%] 2xl:w-[40%]">
-          <h5 className="capitalize text-green-xl text-center xl:text-left text-2xl tablet:text-3xl font-bold">
-            supported countries
+        <div className="order-first flex flex-col justify-between text-left gap-2 xl:w-[30%] 2xl:w-[40%]">
+          <h5 className="text-green-xl text-center xl:text-left text-2xl font-bold">
+            Supported countries
           </h5>
           <h5 className="text-green text-center xl:text-left text-lg">
             LibertyPay currently allows you to send to friends and family in
