@@ -2,7 +2,7 @@ import { FC } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-import logo from "../../assets/images/LibertyIcon.svg";
+import logo from "../../app/assets/images/LibertyIcon.svg";
 
 const Logo: FC = () => {
   return (

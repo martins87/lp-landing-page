@@ -2,7 +2,7 @@ import { FC } from "react";
 import Image from "next/image";
 
 import Button from "../../ui/Button";
-import Screenshot from "../../../assets/images/map-1.png";
+import Screenshot from "../../../app/assets/images/map-1.png";
 import Container from "../../ui/Container";
 
 const Hero: FC = () => {

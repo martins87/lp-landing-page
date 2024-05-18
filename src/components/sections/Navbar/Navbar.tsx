@@ -11,7 +11,6 @@ import Logo from "../../ui/Logo";
 
 const navLinks = [
   { id: "#about-us", section: "About us" },
-  // { id: "#send-now", section: "Send Now" },
   { id: "#countries", section: "Countries" },
   { id: "#contact-us", section: "Contact Us" },
 ];

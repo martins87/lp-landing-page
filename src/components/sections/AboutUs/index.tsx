@@ -1,9 +1,9 @@
 import { FC } from "react";
 
 import FeatureCard from "./FeatureCard";
-import StopWatch from "../../../assets/images/Stopwatch.svg";
-import MoneyBag from "../../../assets/images/MoneyBag.svg";
-import Lock from "../../../assets/images/Lock.svg";
+import StopWatch from "../../../app/assets/images/Stopwatch.svg";
+import MoneyBag from "../../../app/assets/images/MoneyBag.svg";
+import Lock from "../../../app/assets/images/Lock.svg";
 import Container from "../../ui/Container";
 
 const icons = [

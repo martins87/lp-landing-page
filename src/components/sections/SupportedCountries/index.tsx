@@ -1,9 +1,9 @@
 import { FC } from "react";
 
 import FlagBox from "./FlagBox";
-import BrazilFlag from "../../../assets/images/Brazil-flag.jpg";
-import GuatemalaFlag from "../../../assets/images/Guatemala-flag.png";
-import DominicanRepublicFlag from "../../../assets/images/Dominican-Republic-flag.png";
+import BrazilFlag from "../../../app/assets/images/Brazil-flag.jpg";
+import GuatemalaFlag from "../../../app/assets/images/Guatemala-flag.png";
+import DominicanRepublicFlag from "../../../app/assets/images/Dominican-Republic-flag.png";
 import Container from "../../ui/Container";
 
 const Where: FC = () => {

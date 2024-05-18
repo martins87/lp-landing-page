@@ -1,12 +1,12 @@
 import { Fragment } from "react";
 import Image from "next/image";
 
-import SupportedCountries from "../components/sections/SupportedCountries";
-import AboutUs from "../components/sections/AboutUs";
-import Agents from "../components/sections/Agents";
-import Button from "../components/ui/Button";
-import Sticker from "../assets/images/sticker.png";
-import SocialProof from "../components/sections/SocialProof";
+import SupportedCountries from "../../../components/sections/SupportedCountries";
+import AboutUs from "../../../components/sections/AboutUs";
+import Agents from "../../../components/sections/Agents";
+import Button from "../../../components/ui/Button";
+import Sticker from "../../assets/images/sticker.png";
+import SocialProof from "../../../components/sections/SocialProof";
 
 const AgentsPage = () => {
   return (

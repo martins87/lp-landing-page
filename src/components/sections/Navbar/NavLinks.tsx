@@ -9,18 +9,13 @@ type NavLinksProps = {
 
 const NavLinks: FC<NavLinksProps> = ({ links, mobile, onClick }) => {
   return (
-    <ul
-      className={twMerge(
-        "hidden md:flex items-center justify-between gap-10",
-        mobile ? "flex flex-col" : ""
-      )}
-    >
+    <ul className="hidden md:flex items-center justify-between gap-10">
       {links.map((link) => (
         <li
           key={link.id}
           className={twMerge(
-            "text-green text-base",
-            mobile && link.id !== "#contact-us" ? "-ml-16" : ""
+            "text-green text-sm"
+            // mobile && link.id !== "#contact-us" ? "" : "ml-4"
           )}
         >
           <a

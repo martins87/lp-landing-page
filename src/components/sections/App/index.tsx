@@ -1,11 +1,11 @@
 import { FC } from "react";
 import Image from "next/image";
 
-import App1 from "../../../assets/images/app-1.png";
-import App2 from "../../../assets/images/app-2.png";
-import App3 from "../../../assets/images/app-3.png";
-import AppStore from "../../../assets/images/app-store.svg";
-import GooglePlay from "../../../assets/images/google-play.svg";
+import App1 from "../../../app/assets/images/app-1.png";
+import App2 from "../../../app/assets/images/app-2.png";
+import App3 from "../../../app/assets/images/app-3.png";
+import AppStore from "../../../app/assets/images/app-store.svg";
+import GooglePlay from "../../../app/assets/images/google-play.svg";
 import Container from "../../ui/Container";
 
 const App: FC = () => {
