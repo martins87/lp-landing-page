@@ -28,16 +28,18 @@ const AboutUs: FC = () => {
   return (
     <Container>
       <section
-        className="w-full xl:w-[60%] h-auto flex flex-col mx-10 xl:mx-[12.5%] my-24 tablet:my-16"
+        className="w-full xl:w-[60%] h-auto flex flex-col gap-16 tablet:gap-10 mx-10 xl:mx-[12.5%] my-24 tablet:my-16"
         id="about-us"
       >
-        <h2 className="text-2xl tablet:text-3xl text-green-xl text-center font-bold">
-          Connecting you to your family since 2016
-        </h2>
-        <h5 className="text-green text-lg tablet:text-xl text-center mt-2">
-          The fastest and cheapest way to send money to friends or loved ones.
-        </h5>
-        <div className="w-full flex flex-col tablet:flex-row justify-center mt-20 gap-16 tablet:gap-10">
+        <div className="flex flex-col gap-2">
+          <h2 className="text-2xl tablet:text-3xl text-green-xl text-center font-bold">
+            Connecting you to your family since 2016
+          </h2>
+          <h5 className="text-green text-lg tablet:text-xl text-center">
+            The fastest and cheapest way to send money to friends or loved ones.
+          </h5>
+        </div>
+        <div className="w-full flex flex-col tablet:flex-row justify-center gap-16 tablet:gap-10">
           {icons.map((i) => (
             <FeatureCard
               key={i.label}

@@ -13,7 +13,7 @@ const Where: FC = () => {
         className="w-[75%] tablet:w-[60%] flex flex-col xl:flex-row items-center justify-evenly gap-8 xl:gap-8 my-20 tablet:mt-16 tablet:mb-32 py-10 tablet:py-16 px-10 lg:px-20 xl:px-12 text-center tracking-wider bg-really-light-green rounded-[50px]"
         id="countries"
       >
-        <div className="xl:order-first flex gap-6 mobile:gap-8">
+        <div className="xl:order-first flex gap-5 mobile:gap-8">
           <FlagBox flag={BrazilFlag} />
           <FlagBox flag={GuatemalaFlag} />
           <FlagBox flag={DominicanRepublicFlag} />
