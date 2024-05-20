@@ -8,8 +8,8 @@ import Container from "../../ui/Container";
 const Agents: FC = () => {
   return (
     <Container>
-      <section className="w-full xl:w-[60%] h-auto flex items-center justify-center flex-col tablet:flex-row mx-10 xl:mx-0 my-24 tablet:my-32 gap-10 tablet:gap-20 xl:gap-28">
-        <div className="w-[90%] mobile:w-[60%] tablet:w-full rounded-[50px]">
+      <section className="w-full xl:w-[60%] ultrawide:w-[50%] h-auto flex items-center justify-center flex-col tablet:flex-row mx-10 xl:mx-0 my-24 tablet:my-32 gap-10 tablet:gap-20 xl:gap-28">
+        <div className="w-[90%] mobile:w-[60%] tablet:w-full ultrawide:w-[50%] rounded-[50px]">
           <Image
             className="rounded-2xl z-[2]"
             src={ConvenienceStore}

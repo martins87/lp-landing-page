@@ -12,8 +12,8 @@ const AgentsPage = () => {
   return (
     <Fragment>
       <section className="flex items-center justify-center w-full h-auto tablet:h-[80vh] bg-white">
-        <div className="w-full xl:w-[60%] flex flex-col tablet:flex-row items-center justify-between gap-20 tablet:gap-16 my-24 tablet:my-16 mx-10">
-          <div className="w-[90%] mobile:w-[75%] tablet:w-[60%] flex items-center justify-center">
+        <div className="w-full xl:w-[60%] ultrawide:w-[50%] flex flex-col tablet:flex-row items-center justify-between gap-20 tablet:gap-16 my-24 tablet:my-16 mx-10">
+          <div className="w-[90%] mobile:w-[60%] tablet:w-[50%] xl:w-[45%] ultrawide:w-[50%] flex items-center justify-center">
             <Image className="tablet:mt-0" src={Sticker} alt="Agents" />
           </div>
           <div className="tablet:order-first flex flex-col justify-evenly gap-6 tablet:gap-y-6 text-center tablet:text-left">
