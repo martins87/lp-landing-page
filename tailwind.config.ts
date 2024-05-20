@@ -26,6 +26,7 @@ const config: Config = {
       },
       dropShadow: {
         "3xl": "0 4.8px 4.8px rgba(0, 0, 0, 0.25)",
+        "agents-card": "16px 16px 0px rgba(123, 184, 130, 0.7)",
       },
       boxShadow: {
         "hero-app": "0px 2px 12px 1px rgba(0, 0, 0, 0.5)",
