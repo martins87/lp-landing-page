@@ -19,15 +19,16 @@ const NavLinks: FC<NavLinksProps> = ({ links, mobile, onClick }) => {
         <li
           key={link.id}
           className={twMerge(
-            "text-green text-sm"
-            // mobile && link.id !== "#contact-us" ? "" : "ml-4"
+            "text-green text-sm",
+            mobile && link.id !== "#contact-us" ? "-ml-10" : "",
+            link.id !== "#contact-us" ? "hover:font-bold min-w-[70px]" : ""
           )}
         >
           <a
             className={
               link.id === "#contact-us"
                 ? "bg-regular-green rounded-full px-4 py-2 text-white tracking-wide no-underline hover:bg-green-xl"
-                : "hover:font-bold no-underline"
+                : "no-underline"
             }
             href={
               link.id === "#contact-us"
