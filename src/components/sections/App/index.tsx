@@ -16,8 +16,8 @@ const App: FC = () => {
 
   return (
     <Container>
-      <section className="w-full xl:w-[60%] h-auto flex flex-col tablet:flex-row justify-between gap-10 tablet:gap-4 xl:gap-12 mx-10 xl:mx-0 my-20 tablet:mt-32 tablet:mb-44 xl:my-20">
-        <div className="scale-75 sm:scale-[0.9] tablet:scale-100 relative flex items-center justify-center gap-3 xl:py-20 rounded-[50px]">
+      <section className="w-full xl:w-[60%] ultrawide:w-[50%] h-auto flex flex-col tablet:flex-row justify-between ultrawide:justify-around gap-10 tablet:gap-4 xl:gap-12 mx-10 xl:mx-0 my-20 tablet:mt-32 tablet:mb-44 xl:my-20">
+        <div className="scale-75 sm:scale-[0.9] tablet:scale-100 ultrawide:scale-110 relative flex items-center justify-center gap-3 xl:py-20 rounded-[50px]">
           <Image className={sidePhoneClass} src={App1} alt="LibertyPay app" />
           <Image className={centerPhoneClass} src={App2} alt="LibertyPay app" />
           <Image className={sidePhoneClass} src={App3} alt="LibertyPay app" />

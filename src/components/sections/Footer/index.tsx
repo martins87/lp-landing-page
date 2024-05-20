@@ -25,7 +25,7 @@ const Footer: FC = () => {
 
   return (
     <Container className="bg-really-light-green mt-10 tablet:mt-24">
-      <footer className="flex flex-col tablet:flex-row gap-16 tablet:gap-0 justify-between w-full xl:w-[60%] mx-10 xl:mx-0 my-16">
+      <footer className="w-full xl:w-[60%] ultrawide:w-[50%] flex flex-col tablet:flex-row gap-16 tablet:gap-0 justify-between mx-10 xl:mx-0 my-16">
         <div className="tablet:-mt-4 max-w-52 min-w-48">
           <Logo />
         </div>

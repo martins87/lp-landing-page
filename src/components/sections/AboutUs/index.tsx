@@ -28,7 +28,7 @@ const AboutUs: FC = () => {
   return (
     <Container>
       <section
-        className="w-full xl:w-[60%] h-auto flex flex-col gap-16 tablet:gap-10 mx-10 xl:mx-[12.5%] my-24 tablet:my-16"
+        className="w-full xl:w-[60%] ultrawide:w-[50%] h-auto flex flex-col gap-16 tablet:gap-10 mx-10 xl:mx-[12.5%] my-24 tablet:my-16"
         id="about-us"
       >
         <div className="flex flex-col gap-2">

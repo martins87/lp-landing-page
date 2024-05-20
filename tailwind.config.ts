@@ -11,6 +11,7 @@ const config: Config = {
       screens: {
         'mobile': '512px',
         'tablet': '960px',
+        'ultrawide': '3440px',
       },
       colors: {
         "green": "#5A4F4F",
@@ -18,14 +19,10 @@ const config: Config = {
         'really-light-green': '#F0FFF0',
         "light-green": "#99C35F",
         "regular-green": "#7BB882",
-        "dark-green": "#4CA69D",
         "btn-text": "#4CA69D",
       },
       fontFamily: {
         inter: ["var(--font-inter)"],
-        // roboto: ["var(--font-roboto-flex)"],
-        // nunito: ["var(--font-nunito-sans)"],
-        // sans: ["var(--font-opensans)"],
       },
       dropShadow: {
         "3xl": "0 4.8px 4.8px rgba(0, 0, 0, 0.25)",

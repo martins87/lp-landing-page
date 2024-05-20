@@ -10,7 +10,7 @@ const Where: FC = () => {
   return (
     <Container className="">
       <div
-        className="w-[75%] tablet:w-full xl:w-[60%] flex flex-col tablet:flex-row items-center justify-evenly gap-8 xl:gap-8 mx-10 xl:mx-0 my-20 tablet:mt-16 tablet:mb-32 py-10 tablet:py-16 px-10 lg:px-20 xl:px-12 text-center tracking-wider bg-really-light-green rounded-[50px]"
+        className="w-[75%] tablet:w-full xl:w-[60%] ultrawide:w-[50%] flex flex-col tablet:flex-row items-center justify-evenly gap-8 xl:gap-8 mx-10 xl:mx-0 my-20 tablet:mt-16 tablet:mb-32 py-10 tablet:py-16 px-10 lg:px-20 xl:px-12 text-center tracking-wider bg-really-light-green rounded-[50px]"
         id="countries"
       >
         <div className="tablet:order-first flex gap-5 mobile:gap-6 xl:gap-8">
