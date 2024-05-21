@@ -3,11 +3,20 @@ import Link from "next/link";
 import Image from "next/image";
 
 import logo from "../../app/assets/images/LibertyIcon.svg";
+import logoWhite from "../../app/assets/images/libertypay-logo-white.png";
 
-const Logo: FC = () => {
+type LogoProps = {
+  white?: boolean;
+};
+
+const Logo: FC<LogoProps> = ({ white }) => {
   return (
     <Link className="flex items-center" href="/">
-      <Image className="w-36 md:w-44" src={logo} alt="Liberty Pay logo" />
+      <Image
+        className="w-36 md:w-44"
+        src={white ? logoWhite : logo}
+        alt="Liberty Pay logo"
+      />
     </Link>
   );
 };

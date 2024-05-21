@@ -7,7 +7,7 @@ type CloseIconProps = {
 const CloseIcon: FC<CloseIconProps> = ({ onClick }) => {
   return (
     <div
-      className="md:hidden hover:cursor-pointer hover:scale-110 fill-current text-regular-green"
+      className="md:hidden hover:cursor-pointer hover:scale-110 fill-current text-white"
       onClick={onClick}
     >
       <svg

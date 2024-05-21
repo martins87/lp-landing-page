@@ -11,25 +11,28 @@ const NavLinks: FC<NavLinksProps> = ({ links, mobile, onClick }) => {
   return (
     <ul
       className={twMerge(
-        mobile ? "md:hidden flex flex-col" : "hidden md:flex",
-        "items-center justify-between gap-10"
+        "items-start justify-between gap-10",
+        mobile ? "md:hidden flex flex-col gap-0" : "hidden md:flex"
       )}
     >
       {links.map((link) => (
         <li
           key={link.id}
-          className={twMerge(
-            "text-green text-sm",
-            mobile && link.id !== "#contact-us" ? "-ml-10" : "",
-            link.id !== "#contact-us" ? "hover:font-bold min-w-[70px]" : ""
-          )}
+          className={
+            mobile ? "p-4 flex-1 w-full border-b hover:text-green" : ""
+          }
         >
           <a
-            className={
+            className={twMerge(
+              "text-sm no-underline",
               link.id === "#contact-us"
-                ? "bg-regular-green rounded-full px-4 py-2 text-white tracking-wide no-underline hover:bg-green-xl"
-                : "no-underline"
-            }
+                ? "text-white rounded-full px-4 py-2 bg-regular-green hover:bg-green-xl"
+                : "text-green hover:font-bold min-w-[70px]",
+              mobile ? "text-white tracking-wide" : "",
+              mobile && link.id === "#contact-us"
+                ? "bg-white text-green font-bold hover:bg-white"
+                : ""
+            )}
             href={
               link.id === "#contact-us"
                 ? "https://libertypay.activehosted.com/f/1"

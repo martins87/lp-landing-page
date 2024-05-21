@@ -45,12 +45,13 @@ const Navbar: FC = () => {
     <Fragment>
       <nav
         className={twMerge(
-          "flex justify-center sticky top-0 left-0 z-[10] w-full bg-white",
-          isScrolling ? "border-b border-green/10 h-[65px]" : "h-16"
+          "flex justify-center sticky top-0 left-0 z-[10] w-full",
+          isScrolling ? "border-b border-green/10 h-[65px]" : "h-16",
+          isMobileMenuOpen ? "bg-regular-green" : "bg-white"
         )}
       >
         <div className="flex items-center justify-between w-full xl:w-[60%] ultrawide:w-[50%] mx-10 xl:mx-0">
-          <Logo />
+          {isMobileMenuOpen ? <Logo white /> : <Logo />}
           <NavLinks links={navLinks} />
           {!isMobileMenuOpen && <HamburgerIcon onClick={openMobileMenu} />}
           {isMobileMenuOpen && <CloseIcon onClick={closeMobileMenu} />}
