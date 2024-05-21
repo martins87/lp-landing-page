@@ -18,16 +18,17 @@ const NavLinks: FC<NavLinksProps> = ({ links, mobile, onClick }) => {
       {links.map((link) => (
         <li
           key={link.id}
-          className={
+          className={twMerge(
+            "min-w-[70px]",
             mobile ? "p-4 flex-1 w-full border-b hover:text-green" : ""
-          }
+          )}
         >
           <a
             className={twMerge(
               "text-sm no-underline",
               link.id === "#contact-us"
                 ? "text-white rounded-full px-4 py-2 bg-regular-green hover:bg-green-xl"
-                : "text-green hover:font-bold min-w-[70px]",
+                : "text-green hover:font-bold",
               mobile ? "text-white tracking-wide" : "",
               mobile && link.id === "#contact-us"
                 ? "bg-white text-green font-bold hover:bg-white"
