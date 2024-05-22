@@ -13,8 +13,8 @@ const MobileMenu: FC<MobileMenuProps> = ({ open, links, onClick }) => {
   return (
     <div
       className={twMerge(
-        "md:hidden fixed w-full h-screen flex z-[1] border-t border-green/10 bg-regular-green origin-left duration-500 overflow-hidden shadow-2xl",
-        open ? "w-full" : "w-0"
+        "md:hidden fixed w-full h-screen flex z-[1] border-t border-green/10 bg-regular-green origin-left duration-500 shadow-2xl transform",
+        open ? "translate-x-0" : "-translate-x-full"
       )}
     >
       <div className="w-full mx-10">
