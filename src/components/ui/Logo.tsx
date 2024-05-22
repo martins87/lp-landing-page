@@ -12,11 +12,16 @@ type LogoProps = {
 const Logo: FC<LogoProps> = ({ white }) => {
   return (
     <Link className="flex items-center" href="/">
-      <Image
-        className="w-36 md:w-44"
-        src={white ? logoWhite : logo}
-        alt="Liberty Pay logo"
-      />
+      <div className={"visible md:hidden"}>
+        <Image
+          className={"w-36 md:w-44"}
+          src={white ? logoWhite : logo}
+          alt="Liberty Pay logo"
+        />
+      </div>
+      <div className={"hidden md:flex"}>
+        <Image className={"w-36 md:w-44"} src={logo} alt="Liberty Pay logo" />
+      </div>
     </Link>
   );
 };

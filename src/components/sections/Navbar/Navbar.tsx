@@ -47,11 +47,11 @@ const Navbar: FC = () => {
         className={twMerge(
           "flex justify-center sticky top-0 left-0 z-[10] w-full",
           isScrolling ? "border-b border-green/10 h-[65px]" : "h-16",
-          isMobileMenuOpen ? "bg-regular-green" : "bg-white"
+          isMobileMenuOpen ? "bg-regular-green md:bg-white" : "bg-white"
         )}
       >
         <div className="flex items-center justify-between w-full xl:w-[60%] ultrawide:w-[50%] mx-10 xl:mx-0">
-          {isMobileMenuOpen ? <Logo white /> : <Logo />}
+          <Logo white={isMobileMenuOpen} />
           <NavLinks links={navLinks} />
           {!isMobileMenuOpen && <HamburgerIcon onClick={openMobileMenu} />}
           {isMobileMenuOpen && <CloseIcon onClick={closeMobileMenu} />}
